@@ -1,0 +1,206 @@
+body, html {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+  font-size: 16px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-transpartent {
+  background-color: #19171ee0;
+}
+
+.bg-solid {
+  background-color: #19171e;
+}
+
+.vcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.vcontainer > div {
+  height: 50%;
+}
+
+.mcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  gap: .5rem;
+}
+
+.mcontainer > div {
+  flex-grow: 1;
+}
+
+.metric-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: .75rem;
+}
+
+.metric-group-delimiter {
+  font-size: 1.5rem;
+  align-self: start;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-value {
+  position: relative;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.metric-label {
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+.text-great {
+  color:#4dc49e!important
+}
+
+.text-good {
+  color:#9ccc72!important
+}
+
+body,
+.text-average {
+  color:#dedede!important
+}
+
+.text-subpar {
+  color:#f7cd60!important
+}
+
+.text-poor {
+  color:#f77c60!important
+}
+
+.text-ct {
+  color:#84abf1
+}
+
+.text-t {
+  color:#de9b35
+}
+
+.ranked {
+  position: relative;
+  height: 2.1573rem;
+}
+
+.ranked svg {
+  width: 6rem;
+  height: 2.1573rem;
+}
+
+.ranked.ancient svg {
+  fill: #EB4B4B;
+}
+
+.ranked.ancient .ranked-value {
+  color: #EB4B4B;
+}
+
+.ranked.legendary svg {
+  fill: #D22CE6;
+}
+
+.ranked.legendary .ranked-value {
+  color: #D22CE6;
+}
+
+.ranked.unusual svg {
+  fill: #FED700;
+}
+
+.ranked.unusual .ranked-value {
+  color: #FED700;
+}
+
+.ranked.mythical svg {
+  fill: #8846FF;
+}
+
+.ranked.mythical .ranked-value {
+  color: #8846FF;
+}
+
+.ranked.rare svg {
+  fill: #4B69FF;
+}
+
+.ranked.rare .ranked-value {
+  color: #4B69FF;
+}
+
+.ranked.uncommon svg {
+  fill: #5E98D7;
+}
+
+.ranked.uncommon .ranked-value {
+  color: #5E98D7;
+}
+
+.ranked.common svg {
+  fill: #B1C3D9;
+}
+
+.ranked.common .ranked-value {
+  color: #B1C3D9;
+}
+
+.ranked-value {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.6rem;
+
+  transform: skew(-15deg);
+  -webkit-transform: skew(-10deg);
+  -moz-transform: skew(-15deg);
+  text-shadow: 0 .125rem 0 black;
+
+  position: absolute;
+  left: 15%;
+  top: .125rem;
+  width: 80%;
+}
+
+.ranked-value small {
+  font-size: 1.15rem;
+}
+
+
+.wrapper{
+  position:relative;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all .5s ease;
+}
+
+.v-leave-active {
+  position: absolute;
+  left: 0;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
