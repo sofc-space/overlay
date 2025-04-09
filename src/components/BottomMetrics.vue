@@ -5,19 +5,19 @@ defineProps(["apiResult"])
 </script>
 
 <template>
-  <div class="bg-transpartent mcontainer">
+  <div class="bg-transparent mcontainer">
     <div class="metric-group">
-      <PremierMetric :value="apiResult.premierStart" label="beginn" />
+      <PremierMetric :value="apiResult.premierStart" :label="$t('labels.begin')" />
       <div class="metric-group-delimiter">→</div>
-      <PremierMetric :value="apiResult.premierCurrent" label="aktuell" />
+      <PremierMetric :value="apiResult.premierCurrent" :label="$t('labels.current')" />
     </div>
-    <Metric label="matches" :value="apiResult.matches"></Metric>
+    <Metric :label="$t('labels.matches')" :value="apiResult.matches"></Metric>
     <div class="metric-group">
-      <Metric label="win" :value="apiResult.wins" text="great"></Metric>
+      <Metric :label="$t('labels.win')" :value="apiResult.wins" text="great"></Metric>
       <div class="metric-group-delimiter">/</div>
-      <Metric label="tie" :value="apiResult.draws" text="subpar"></Metric>
+      <Metric :label="$t('labels.tie')" :value="apiResult.draws" text="subpar"></Metric>
       <div class="metric-group-delimiter">/</div>
-      <Metric label="loss" :value="apiResult.losses" text="poor"></Metric>
+      <Metric :label="$t('labels.loss')" :value="apiResult.losses" text="poor"></Metric>
     </div>
   </div>
 </template>

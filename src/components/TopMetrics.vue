@@ -8,13 +8,13 @@ defineProps(["apiResult"])
 <template>
   <div class="bg-solid mcontainer">
     <div class="metric-group">
-      <Metric label="kills" :value="apiResult.kills" text="great"></Metric>
-      <Metric label="deaths" :value="apiResult.deaths" text="poor"></Metric>
+      <Metric :label="$t('labels.kills')" :value="apiResult.kills" text="great"></Metric>
+      <Metric :label="$t('labels.deaths')" :value="apiResult.deaths" text="poor"></Metric>
     </div>
-    <Metric label="K/D" :value="$n(apiResult.kd, 'twoFractionNumber')"></Metric>
-    <Metric label="ADR" :value="$n(apiResult.adr, 'twoFractionNumber')" v-if="apiResult.adr != null"></Metric>
-    <Metric label="HS" :value="$n(apiResult.hs, 'percent', { minimumFractionDigits: 2 })" v-if="apiResult.hs != null"></Metric>
-    <Metric label="winrate" :value="$n(apiResult.winrate, 'percent', { minimumFractionDigits: 2 })"></Metric>
+    <Metric :label="$t('labels.kdratio')" :value="$n(apiResult.kd, 'twoFractionNumber')"></Metric>
+    <Metric :label="$t('labels.adr')" :value="$n(apiResult.adr, 'twoFractionNumber')" v-if="apiResult.adr != null"></Metric>
+    <Metric :label="$t('labels.hsrate')" :value="$n(apiResult.hs, 'percent', { minimumFractionDigits: 2 })" v-if="apiResult.hs != null"></Metric>
+    <Metric :label="$t('labels.winrate')" :value="$n(apiResult.winrate, 'percent', { minimumFractionDigits: 2 })"></Metric>
   </div>
 </template>
 

@@ -2,14 +2,14 @@ body, html {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 2.25vw;
 
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.bg-transpartent {
+.bg-transparent {
   background-color: #19171ee0;
 }
 
@@ -17,14 +17,37 @@ body, html {
   background-color: #19171e;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: .25rem;
+  font-size: .75rem;
+}
+
+.credits {
+  flex-grow: 1;
+  text-align: right;
+  font-size: .75rem;
+}
+
+.credits img {
+  height: 1rem;
+  vertical-align: middle;
+}
+
+.metric-wrapper > .vcontainer {
+  flex-grow: 1;
+}
+
 .vcontainer {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .vcontainer > div {
-  height: 50%;
+  flex-grow: 1;
 }
 
 .mcontainer {
@@ -64,7 +87,7 @@ body, html {
 
 .metric-label {
   font-weight: bold;
-  font-size: .75rem;
+  font-size: .9rem;
 }
 
 .text-great {
