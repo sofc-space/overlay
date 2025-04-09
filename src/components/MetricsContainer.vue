@@ -1,10 +1,9 @@
 <script setup>
-import TopMetrics from "@/components/TopMetrics.vue";
-import BottomMetrics from "@/components/BottomMetrics.vue";
+import layout from "@/layoutChooser.js";
 import {ref} from "vue";
 import axios from "axios";
-import Credit from "@/components/Credit.vue";
-import i18n from "@/i18n.js";
+import HandcamLayout from "@/components/layout/handcam/HandcamLayout.vue";
+import BoxLayout from "@/components/layout/box/BoxLayout.vue";
 
 const props = defineProps(["steam64Id"]);
 
@@ -23,27 +22,18 @@ const apiResult = ref({
   losses: 0,
   firstMatch: null,
   lastMatch: null,
+  premierSeasonWins: 0,
+  premierSeasonDraws: 0,
+  premierSeasonLosses: 0,
+  premierSeasonWinRate: 0,
 });
 
 function updateData() {
   axios.get("https://publ-api.cs2stats.sofc.dev/stats/" + props.steam64Id)
       .then(res => {
-        console.log(apiResult)
         apiResult.value = res.data;
       })
-      .finally(() => setTimeout(updateData, 1000));
-}
-
-const unitsInSec = [60, 3600, 86400, 86400 * 7, 86400 * 30, 86400 * 365, Infinity];
-const unitStrings = ["second", "minute", "hour", "day", "week", "month", "year"];
-
-function getRelativeDate(dateString, locale) {
-  const date = new Date(dateString);
-  const secondsDiff = Math.round((date - Date.now()) / 1000);
-  const unitIndex = unitsInSec.findIndex((cutoff) => cutoff > Math.abs(secondsDiff));
-  const divisor = unitIndex ? unitsInSec[unitIndex - 1] : 1;
-  const rtf = new Intl.RelativeTimeFormat(locale, {style: 'short'});
-  return rtf.format(Math.floor(secondsDiff / divisor), unitStrings[unitIndex]);
+      .finally(() => setTimeout(updateData, 10 * 1000));
 }
 
 updateData()
@@ -51,15 +41,8 @@ updateData()
 </script>
 
 <template>
-
   <div class="vcontainer">
-    <TopMetrics :api-result="apiResult"></TopMetrics>
-    <BottomMetrics :api-result="apiResult"></BottomMetrics>
-    <div class="footer">
-      <div>
-        <span>{{ getRelativeDate(apiResult.firstMatch, $i18n.locale) }} - {{ getRelativeDate(apiResult.lastMatch, $i18n.locale) }}</span>
-      </div>
-      <Credit />
-    </div>
+    <BoxLayout :apiResult="apiResult" v-if="layout === 'box'" />
+    <HandcamLayout :apiResult="apiResult" v-else />
   </div>
 </template>

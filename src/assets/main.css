@@ -2,11 +2,18 @@ body, html {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
   overflow: hidden;
-  font-size: 2.25vw;
 
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+html {
+  font-size: 2.25vw;
+}
+
+html.layout-box {
+  font-size: 4.3vw;
 }
 
 .bg-transparent {
@@ -20,8 +27,13 @@ body, html {
 .footer {
   display: flex;
   flex-direction: row;
-  padding: .25rem;
+  padding: .25rem .5rem;
   font-size: .75rem;
+  text-shadow: .015rem .015rem .1rem black;
+}
+
+.footer .timespan {
+  text-wrap: nowrap;
 }
 
 .credits {
@@ -33,6 +45,7 @@ body, html {
 .credits img {
   height: 1rem;
   vertical-align: middle;
+  filter: drop-shadow(.015rem .015rem .1rem black);
 }
 
 .metric-wrapper > .vcontainer {
@@ -96,6 +109,10 @@ body, html {
 
 .text-good {
   color:#9ccc72!important
+}
+
+.text-semi {
+  color: #60abbd !important
 }
 
 body,

@@ -1,6 +1,6 @@
 <script setup>
 
-import Metric from "@/components/Metric.vue";
+import Metric from "@/components/metric/Metric.vue";
 defineProps(["apiResult"])
 
 </script>
@@ -17,7 +17,3 @@ defineProps(["apiResult"])
     <Metric :label="$t('labels.winrate')" :value="$n(apiResult.winrate, 'percent', { minimumFractionDigits: 2 })"></Metric>
   </div>
 </template>
-
-<style scoped>
-
-</style>

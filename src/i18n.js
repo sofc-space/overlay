@@ -1,7 +1,7 @@
 import {createI18n} from "vue-i18n";
 
 let url = window.location.toString();
-let localeMatches = url.match(/^.+\?lang=([a-z]{2})/i);
+let localeMatches = url.match(/^.+[?&]lang=([a-z]{2})/i);
 let locale = localeMatches ? localeMatches[1]: 'en'
 
 const i18n = createI18n({
@@ -22,8 +22,15 @@ const i18n = createI18n({
                 win: "win",
                 tie: "tie",
                 loss: "loss",
+                season_wins: "S2 wins",
             },
             credits: "Daten bereitgestellt von",
+            footer: {
+                timespan: {
+                    from: "von",
+                    to: "bis",
+                }
+            }
         },
         en: {
             labels: {
@@ -39,8 +46,15 @@ const i18n = createI18n({
                 win: "win",
                 tie: "tie",
                 loss: "loss",
+                season_wins: "S2 wins",
             },
             credits: "data provided by",
+            footer: {
+                timespan: {
+                    from: "from",
+                    to: "to",
+                }
+            }
         }
     },
     numberFormats: {
