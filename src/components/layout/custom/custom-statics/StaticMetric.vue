@@ -1,9 +1,9 @@
 <script setup>
 import Metric from "@/components/metric/Metric.vue";
 
-const props = defineProps(["label", "value", "color"])
+const props = defineProps(["params"])
 </script>
 
 <template>
-<Metric :label="props.label" :value="props.value" :text="props.color" />
+<Metric :label="props.params.label" :value="props.params.value" :text="props.params.color" />
 </template>

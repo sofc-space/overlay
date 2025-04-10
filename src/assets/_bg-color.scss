@@ -1,4 +1,5 @@
 @use "colors";
+@use "custom-scheme";
 
 .bg-transparent {
   background-color: colors.$bg-transparent;

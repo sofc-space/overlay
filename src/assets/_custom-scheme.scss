@@ -1,0 +1,19 @@
+@use "colors";
+
+$schemes: (
+  "thedark": colors.$bg-solid,
+  "darkest": colors.$bg-solid-1,
+  "darker": colors.$bg-solid-2,
+  "dark": colors.$bg-solid-3,
+  "semi": colors.$bg-semi-transparent,
+  "transparent": colors.$bg-transparent,
+);
+
+
+.custom-mcontainer {
+  @each $name, $color in $schemes {
+    &.custom-mcontainer-#{$name} {
+      background-color: $color !important;
+    }
+  }
+}
