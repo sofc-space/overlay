@@ -7,17 +7,18 @@ import CustomFooter from "@/components/layout/custom/custom-layout/CustomFooter.
 
 defineProps(["apiResult"]);
 
-const json = ref()
+const json = ref({})
 
 onUpdated(() => {
   colorScheme(getParameterValue("scheme", "regular"));
   scaling(getParameterValue("scaling", 1));
-  json.value = JSON.parse(atob(getParameterValue("definition", "W10=")));
+  json.value = JSON.parse(atob(getParameterValue("definition", "e30="))); // e.g. eyJjb250YWluZXJzIjpbeyJzY2hlbWUiOiJkYXJrIiwiY29udGVudCI6WyJhZHIiXX0seyJzY2hlbWUiOiJkYXJrZXIiLCJjb250ZW50IjpbImFkciJdfSx7InNjaGVtZSI6ImRhcmtlc3QiLCJjb250ZW50IjpbImFkciJdfSx7InNjaGVtZSI6InRoZWRhcmsiLCJjb250ZW50IjpbImFkciJdfSx7InNjaGVtZSI6InNlbWkiLCJjb250ZW50IjpbImFkciJdfSx7InNjaGVtZSI6InRyYW5zcGFyZW50IiwiY29udGVudCI6W1sia2lsbCIsInRpZSIsImRlYXRoIl0sWyJjdXJyZW50X3NlYXNvbl93aW4iLHsibWV0cmljIjoiZGVsaW1pdGVyIiwicHJvcHMiOnsiY2hhciI6Ii8ifX0seyJtZXRyaWMiOiJzdGF0aWMiLCJwcm9wcyI6eyJsYWJlbCI6InZvbiIsInZhbHVlIjoiMTI1IiwiY29sb3IiOiJhdmVyYWdlIn19XV19XSwgInNob3dUaW1lUmFuZ2UiOiB0cnVlfQ==
+  console.log(json.value)
 });
 
 </script>
 
 <template>
-  <MContainerGenerator :layoutJson="json" :apiResult="apiResult" />
-  <CustomFooter />
+  <MContainerGenerator :layoutJson="json.containers" :apiResult="apiResult" />
+  <CustomFooter :apiResult="apiResult" :showRange="json.showTimeRange" />
 </template>
