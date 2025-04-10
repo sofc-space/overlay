@@ -1,32 +1,34 @@
+@use "colors";
+
 .text-great {
-  color:#4dc49e!important
+  color: colors.$great !important
 }
 
 .text-good {
-  color:#9ccc72!important
+  color: colors.$good !important
 }
 
 .text-semi {
-  color: #60abbd !important
+  color: colors.$semi !important
 }
 
 body,
 .text-average {
-  color:#dedede!important
+  color: colors.$average !important
 }
 
 .text-subpar {
-  color:#f7cd60!important
+  color: colors.$subpar !important
 }
 
 .text-poor {
-  color:#f77c60!important
+  color: colors.$poor !important
 }
 
 .text-ct {
-  color:#84abf1
+  color: colors.$ct-color !important;
 }
 
 .text-t {
-  color:#de9b35
+  color:  colors.$t-color !important;
 }

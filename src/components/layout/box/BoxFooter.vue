@@ -7,7 +7,7 @@ defineProps(["apiResult"]);
 
 <template>
   <div>
-    <div class="footer">
+    <div class="footer bg-transparent">
       <div class="timespan">
         <div>
           {{ $t('footer.timespan.from') }} {{ getRelativeDate(apiResult.firstMatch, $i18n.locale) }}

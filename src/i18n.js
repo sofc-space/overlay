@@ -1,8 +1,7 @@
 import {createI18n} from "vue-i18n";
+import getParameterValue from "@/parameter.js";
 
-let url = window.location.toString();
-let localeMatches = url.match(/^.+[?&]lang=([a-z]{2})/i);
-let locale = localeMatches ? localeMatches[1]: 'en'
+let locale = getParameterValue("lang", "en")
 
 const i18n = createI18n({
     locale: locale,

@@ -3,7 +3,8 @@ import {onMounted, ref} from "vue";
 import axios from "axios";
 import HandcamLayout from "@/components/layout/handcam/HandcamLayout.vue";
 import BoxLayout from "@/components/layout/box/BoxLayout.vue";
-import layoutFinder from "@/layoutChooser.js";
+import { layoutFinder } from "@/layoutChooser.js";
+import CustomLayout from "@/components/layout/custom/CustomLayout.vue";
 
 const props = defineProps(["steam64Id"]);
 
@@ -48,7 +49,8 @@ updateData()
 
 <template>
   <div class="vcontainer">
-    <BoxLayout :apiResult="apiResult" v-if="layout === 'box'" />
+    <CustomLayout :apiResult="apiResult" v-if="layout === 'custom'" />
+    <BoxLayout :apiResult="apiResult" v-else-if="layout === 'box'" />
     <HandcamLayout :apiResult="apiResult" v-else />
   </div>
 </template>

@@ -1,7 +1,27 @@
+@use "colors";
+
 .bg-transparent {
-  background-color: #19171ee0;
+  background-color: colors.$bg-transparent;
+}
+
+.bg-semi-transparent {
+  background-color: colors.$bg-semi-transparent;
 }
 
 .bg-solid {
-  background-color: #19171e;
+  background-color: colors.$bg-solid;
+}
+
+.scheme-solid {
+  .bg-transparent {
+    background-color: colors.$bg-transparent_solid;
+  }
+
+  .bg-semi-transparent {
+    background-color: colors.$bg-semi-transparent_solid;
+  }
+
+  .bg-solid {
+    background-color: colors.$bg-solid_solid;
+  }
 }

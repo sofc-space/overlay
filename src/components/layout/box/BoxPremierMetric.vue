@@ -6,7 +6,7 @@ defineProps(["apiResult"]);
 </script>
 
 <template>
-  <div class="bg-transparent mcontainer">
+  <div class="bg-semi-transparent mcontainer">
     <div class="metric-group">
       <PremierMetric :value="apiResult.premierStart" :label="$t('labels.begin')" />
       <div class="metric-group-delimiter">→</div>
