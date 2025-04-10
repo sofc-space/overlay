@@ -1,11 +1,17 @@
 <script setup>
-import layout from "@/layoutChooser.js";
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import axios from "axios";
 import HandcamLayout from "@/components/layout/handcam/HandcamLayout.vue";
 import BoxLayout from "@/components/layout/box/BoxLayout.vue";
+import layoutFinder from "@/layoutChooser.js";
 
 const props = defineProps(["steam64Id"]);
+
+const layout = ref("")
+const initialize = () => {
+  layout.value = layoutFinder()
+};
+onMounted(() => initialize());
 
 const apiResult = ref({
   kills: 0,
@@ -46,3 +52,4 @@ updateData()
     <HandcamLayout :apiResult="apiResult" v-else />
   </div>
 </template>
+
