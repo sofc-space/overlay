@@ -1,22 +1,27 @@
 <script setup>
 import availableMetrics from '@/assets/metric/metrics_description.json';
 import EditorMetricProps from "@/components/editor/blocks/EditorMetricProps.vue";
+import {ref, watch} from "vue";
 
 const props = defineProps(["metric"]);
-defineEmits(["deleteItem", "changeMetric"]);
+const emits = defineEmits(["deleteItem", "changeMetric"]);
 
 const isObject = typeof props.metric === "object";
-const metricKey = isObject ? props.metric.metric : props.metric;
+const metricKey = ref(isObject ? props.metric.metric : props.metric);
 
-const sortable = Object.keys(availableMetrics).sort((a, b) => availableMetrics[a].label.localeCompare(availableMetrics[b].label));
+watch(metricKey, v => {
+  emits('changeMetric', v);
+});
 
+
+const availableMetricsSorted = Object.keys(availableMetrics).sort((a, b) => availableMetrics[a].label.localeCompare(availableMetrics[b].label));
 </script>
 
 <template>
   <div class="editor-block-metric">
     <div class="editor-block-metric-selector">
-      <select v-model="metricKey" @change="() => $emit('changeMetric', metricKey)">
-        <option v-for="k in sortable" :value="k">{{ availableMetrics[k].label }}</option>
+      <select v-model="metricKey">
+        <option v-for="k in availableMetricsSorted" :key="k" :value="k">{{ availableMetrics[k].label }}</option>
       </select>
     </div>
     <div class="editor-block-metric-actions">
