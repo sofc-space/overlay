@@ -55,3 +55,7 @@ updateData()
   </div>
 </template>
 
+<style lang="scss">
+@use "@/assets/overlay";
+</style>
+

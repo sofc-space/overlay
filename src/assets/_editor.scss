@@ -1,0 +1,270 @@
+@use "colors";
+
+.editor-wrapper {
+  background-color: colors.$bg-solid;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  $border-width: .1rem;
+  $border-primary-color: colors.$primary;
+  $border-secondary-color: colors.$border-1;
+
+  a {
+    color: colors.$primary;
+  }
+
+  > div {
+    flex-grow: 1;
+
+    &.editor {
+      width: 70%;
+    }
+
+    &.editor-preview {
+      width: 30%;
+    }
+
+  }
+
+  .editor-preview-input-wrapper > div,
+  .editor-preview-input-wrapper,
+  .editor-globals,
+  .editor-header {
+    padding: .5rem 1rem;
+    margin: 0;
+  }
+
+  .editor-header {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+    .editor-header-actions {
+      > button {
+        background-color: colors.$primary;
+      }
+    }
+  }
+
+  .editor {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    select,
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+    }
+
+    .editor-globals {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    .editor-showTimespan {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .editor-blocks {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      overflow-y: scroll;
+      border-top: $border-width solid $border-secondary-color;
+
+      button {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: .25rem;
+        font-size: 1.125rem;
+      }
+
+      .editor-blocks-footer {
+        button {
+          margin-left: auto;
+          display: block;
+          font-size: 1.5rem;
+        }
+      }
+
+      .editor-block-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .editor-block {
+          background-color: colors.$bg-solid-2;
+          border: $border-width solid $border-secondary-color;
+        }
+
+        .editor-block-actions {
+          justify-self: stretch;
+          background-color: colors.$bg-solid-1;
+          border: $border-width solid $border-secondary-color;
+          border-bottom: none;
+          display: flex;
+          flex-direction: row;
+          padding: .5rem 1rem;
+          align-items: center;
+          gap: 1rem;
+
+          .editor-block-actions-label {
+            flex-grow: 1;
+          }
+
+          .editor-block-actions-scheme {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .5rem;
+
+            select {
+              flex-grow: 1;
+              width: auto;
+            }
+          }
+
+          .editor-block-actions-buttons {
+            display: flex;
+            gap: .25rem;
+          }
+        }
+
+        .editor-block-group-actions,
+        .editor-block-metric-actions,
+        .editor-block-actions {
+          flex-wrap: nowrap;
+          text-wrap: nowrap;
+        }
+
+        button {
+          align-self: center;
+        }
+
+        .editor-block-group,
+        .editor-block {
+          flex-grow: 1;
+          padding: 1rem;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.75rem;
+
+          > div {
+            flex-grow: 1;
+
+            &.editor-block-group-actions {
+              flex-grow: 0;
+              background-color: colors.$bg-solid-1;
+            }
+          }
+
+          &.editor-block-group {
+            justify-content: center;
+            background-color: colors.$bg-solid-3;
+            border: $border-width solid $border-primary-color;
+            padding: 0;
+
+            > .editor-block-group-metrics {
+              padding: 1rem;
+              display: flex;
+              flex-direction: row;
+              gap: .75rem;
+              > div {
+                flex-grow: 1;
+              }
+            }
+
+            > .editor-block-group-actions {
+              align-self: stretch;
+              display: flex;
+              flex-direction: row;
+              padding: .5rem;
+              border-left: $border-width solid $border-primary-color;
+            }
+          }
+
+          .editor-block-metric {
+            display: flex;
+            flex-direction: column;
+            background-color: colors.$bg-solid-3;
+            border: $border-width solid $border-secondary-color;
+            border-radius: .25rem;
+            align-items: stretch;
+            overflow: hidden;
+
+
+            .editor-block-metric-selector {
+              flex-grow: 1;
+              select {
+                border-radius: 0;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+              }
+            }
+
+            .editor-block-metric-actions {
+              display: flex;
+              align-items: center;
+              justify-content: end;
+            }
+          }
+        }
+
+
+      }
+
+    }
+  }
+
+  .editor-preview {
+    background-color: colors.$bg-solid-1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 100vh;
+
+    .preview-canvas {
+      background-color: colors.$bg-solid-2;
+      padding: 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      //align-items: center;
+      overflow: scroll;
+
+      .preview {
+        flex-grow: 1;
+        position: relative;
+        height: 0;
+        transition: padding-bottom ease 250ms;
+        border: $border-width solid $border-primary-color;
+        margin: auto 0;
+
+        iframe {
+          background-color: colors.$bg-solid-3;
+          background-image: url("bg_preview_cs2.jpg");
+          background-position: center;
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}

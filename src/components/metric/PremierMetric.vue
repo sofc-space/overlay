@@ -29,13 +29,15 @@ function getCssClass() {
 <template>
   <div class="metric">
     <div :class="'ranked ' + getCssClass()">
-      <div class="ranked-value" v-if="props.value > 0">
-        {{ Math.floor(props.value / 1000) }}<small>,{{ (props.value % 1000).toString().padStart(3, '0') }}</small>
+      <div class="ranked-value-wrapper">
+        <div class="ranked-value" v-if="props.value > 0">
+          {{ Math.floor(props.value / 1000) }}<small>,{{ (props.value % 1000).toString().padStart(3, '0') }}</small>
+        </div>
+        <div class="ranked-value" v-else>
+          ---
+        </div>
+        <IconPremier />
       </div>
-      <div class="ranked-value" v-else>
-        ---
-      </div>
-      <IconPremier />
     </div>
     <div class="metric-label">
       {{ props.label }}

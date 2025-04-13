@@ -12,6 +12,7 @@
   color: colors.$semi !important
 }
 
+:modal,
 body,
 .text-average {
   color: colors.$average !important
@@ -31,4 +32,8 @@ body,
 
 .text-t {
   color:  colors.$t-color !important;
+}
+
+.text-primary {
+  color:  colors.$primary !important;
 }

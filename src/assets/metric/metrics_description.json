@@ -1,0 +1,64 @@
+{
+  "adr": {
+    "label": "ADR"
+  },
+  "current_season_win": {
+    "label": "Current Premier Season Wins"
+  },
+  "death": {
+    "label": "Total Deaths"
+  },
+  "hs_rate": {
+    "label": "Headshot Rate"
+  },
+  "kd": {
+    "label": "K/D"
+  },
+  "kill": {
+    "label": "Total Kills"
+  },
+  "loss": {
+    "label": "Total Losses"
+  },
+  "matches": {
+    "label": "Total Matches"
+  },
+  "premier_current": {
+    "label": "Premier Current Rank"
+  },
+  "premier_start": {
+    "label": "Premier Start Rank"
+  },
+  "tie": {
+    "label": "Total Ties"
+  },
+  "win": {
+    "label": "Total Wins"
+  },
+  "winrate": {
+    "label": "Winrate"
+  },
+  "delimiter": {
+    "label": "Delimiter",
+    "props": {
+      "char": "text"
+    }
+  },
+  "static": {
+    "label": "Static Text",
+    "props": {
+      "label": "text",
+      "value": "text",
+      "color": [
+        "great",
+        "good",
+        "semi",
+        "average",
+        "subpar",
+        "poor",
+        "ct",
+        "t"
+      ]
+    }
+  }
+}

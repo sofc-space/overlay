@@ -15,10 +15,13 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.326",
     "@vitejs/plugin-vue": "^5.2.3",
     "sass": "^1.86.3",
     "sass-embedded": "^1.86.3",
     "sass-loader": "^16.0.5",
+    "unplugin-icons": "^22.1.0",
+    "unplugin-vue-components": "^28.4.1",
     "vite": "^6.2.4",
     "vite-plugin-vue-devtools": "^7.7.2"
   }
