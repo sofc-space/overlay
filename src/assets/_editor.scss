@@ -2,17 +2,12 @@
 
 .editor-wrapper {
   background-color: colors.$bg-solid;
-  min-height: 100vh;
   display: flex;
   flex-direction: row;
 
   $border-width: .1rem;
   $border-primary-color: colors.$primary;
   $border-secondary-color: colors.$border-1;
-
-  a {
-    color: colors.$primary;
-  }
 
   > div {
     flex-grow: 1;
@@ -49,7 +44,7 @@
   }
 
   .editor {
-    max-height: 100vh;
+    //max-height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -231,7 +226,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    max-height: 100vh;
 
     .preview-canvas {
       background-color: colors.$bg-solid-2;

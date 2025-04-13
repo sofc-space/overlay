@@ -1,0 +1,117 @@
+{
+  "general": {
+    "title": "Editor",
+    "description": "Erstelle dein eigenes Overlay!"
+  },
+  "globals": {
+    "steam64Id_label": "Steam-64-ID",
+    "steam64Id_description": "So findest du deine Steam-64-ID.",
+    "scaling_label": "Skalierung",
+    "scaling_description": "Skalierung deines Overlays",
+    "language_label": "Sprache",
+    "language_description": "Sprache deines Overlays",
+    "timerange_label": "Zeige die Zeitspanne deiner Daten"
+  },
+  "preview": {
+    "url_label": "Link",
+    "url_copy": "Link kopieren",
+    "ratio_label": "Seitenverhältnis (Breite / Höhe)"
+  },
+  "color": {
+    "scheme": {
+      "label": "Farbschema",
+      "dark": "dunkel",
+      "darker": "dunkler",
+      "darkest": "am dunkelsten",
+      "thedark": "das Dunkel!",
+      "semi": "halbtransparent",
+      "transparent": "transparent"
+    }
+  },
+  "actions": {
+    "delete_row": "Zeile löschen",
+    "add_row": "Zeile hinzufügen",
+    "delete_group": "Gruppe löschen",
+    "add_group": "Gruppe hinzufügen",
+    "delete_metric": "Metrik löschen",
+    "add_metric": "Metrik hinzufügen",
+    "import": {
+      "button": "Importieren",
+      "title": "Konfiguration importieren",
+      "description": "Füge deine URL hier ein, um die Konfiguration zu importieren.",
+      "label": "Konfiguration",
+      "error_msg": "Fehler beim Importieren: {msg}"
+    }
+  },
+  "metric": {
+    "props": {
+      "edit": "Parameter bearbeiten",
+      "edit_title": "{title} bearbeiten"
+    },
+    "types": {
+      "adr": {
+        "label": "ADR"
+      },
+      "current_season_win": {
+        "label": "S2 – gewonnene Spiele"
+      },
+      "death": {
+        "label": "Tode"
+      },
+      "hs_rate": {
+        "label": "Kopfschussrate"
+      },
+      "kd": {
+        "label": "K/D"
+      },
+      "kill": {
+        "label": "Kills"
+      },
+      "loss": {
+        "label": "Verlorene Spiele"
+      },
+      "matches": {
+        "label": "Matches"
+      },
+      "premier_current": {
+        "label": "Premier-Rang (aktuell)"
+      },
+      "premier_start": {
+        "label": "Premier-Rang (Beginn)"
+      },
+      "tie": {
+        "label": "Unentschieden"
+      },
+      "win": {
+        "label": "Gewonnene Spiele"
+      },
+      "winrate": {
+        "label": "Gewinnrate"
+      },
+      "delimiter": {
+        "label": "Trennzeichen",
+        "props": {
+          "char": "Zeichen"
+        }
+      },
+      "static": {
+        "label": "Text",
+        "props": {
+          "label": "Beschriftung",
+          "value": "Wert",
+          "color": "Farbschema",
+          "color_values": {
+            "great": "Großartig",
+            "good": "Gut",
+            "semi": "Ganz okay",
+            "average": "Durchschnittlich",
+            "subpar": "Unterdurchschnittlich",
+            "poor": "Schlecht",
+            "ct": "Counter-Terrorists",
+            "t": "Terrorists"
+          }
+        }
+      }
+    }
+  }
+}

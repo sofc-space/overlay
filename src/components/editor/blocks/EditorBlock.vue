@@ -21,24 +21,24 @@ function addGroup() {
         Container
       </div>
       <div class="editor-block-actions-scheme">
-        <label>scheme: </label>
+        <label>{{ $t("editor.color.scheme.label") }}: </label>
         <select v-model="container.scheme">
-          <option value="dark">dark</option>
-          <option value="darker">darker</option>
-          <option value="darkest">darkest</option>
-          <option value="thedark">the dark.</option>
-          <option value="semi">semi transparent</option>
-          <option value="transparent">transparent</option>
+          <option value="dark">{{ $t("editor.color.scheme.dark") }}</option>
+          <option value="darker">{{ $t("editor.color.scheme.darker") }}</option>
+          <option value="darkest">{{ $t("editor.color.scheme.darkest") }}</option>
+          <option value="thedark">{{ $t("editor.color.scheme.thedark") }}</option>
+          <option value="semi">{{ $t("editor.color.scheme.semi") }}</option>
+          <option value="transparent">{{ $t("editor.color.scheme.transparent") }}</option>
         </select>
       </div>
       <div class="editor-block-actions-buttons">
-        <button @click="() => $emit('removeContainer')" class="text-poor" title="delete row">
+        <button @click="() => $emit('removeContainer')" class="text-poor" :title="$t('editor.actions.delete_row')">
           <i-material-symbols-delete-rounded />
         </button>
-        <button @click="addGroup" class="text-great" title="add metric group">
+        <button @click="addGroup" class="text-great" :title="$t('editor.actions.add_group')">
           <i-material-symbols-insert-chart-outline-rounded />
         </button>
-        <button @click="addMetric" class="text-great" title="add single metric">
+        <button @click="addMetric" class="text-great" :title="$t('editor.actions.add_metric')">
           <i-material-symbols-stacked-line-chart-rounded />
         </button>
       </div>

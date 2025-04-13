@@ -16,10 +16,10 @@ function addMetric() {
         <EditorBlockContentItem v-for="(group_child, index) in group" :item="group_child" @deleteItem="() => group.splice(index, 1)" @changeMetric="target => updateMetric(group, index, target)" />
     </div>
     <div class="editor-block-group-actions">
-      <button @click="() => $emit('deleteGroup')" class="text-poor" title="delete group">
+      <button @click="() => $emit('deleteGroup')" class="text-poor" :title="$t('editor.actions.delete_group')">
         <i-material-symbols-delete-rounded />
       </button>
-      <button @click="addMetric" class="text-great" title="add single metric">
+      <button @click="addMetric" class="text-great" :title="$t('editor.actions.add_metric')">
         <i-material-symbols-stacked-line-chart-rounded />
       </button>
     </div>

@@ -5,6 +5,7 @@ import HandcamLayout from "@/components/layout/handcam/HandcamLayout.vue";
 import BoxLayout from "@/components/layout/box/BoxLayout.vue";
 import { layoutFinder } from "@/layoutChooser.js";
 import CustomLayout from "@/components/layout/custom/CustomLayout.vue";
+import {setupI18n} from "@/i18n.js";
 
 const props = defineProps(["steam64Id"]);
 
@@ -44,6 +45,8 @@ function updateData() {
 }
 
 updateData()
+
+setupI18n()
 
 </script>
 

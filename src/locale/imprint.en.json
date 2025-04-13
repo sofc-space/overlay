@@ -1,0 +1,28 @@
+{
+  "title": "Imprint",
+  "title_sub": "Information pursuant to § 5 DDG",
+  "name": "Hendrik Heinle",
+  "address": {
+    "street": "Ackerstr. 2A",
+    "city": "41065 Mönchengladbach",
+    "country": "Germany"
+  },
+  "contact": {
+    "title": "Contact",
+    "phoneLabel": "Phone",
+    "phone": "0176-58864507",
+    "emailLabel": "Email",
+    "email_address": "info[at]hendrik-heinle.de"
+  },
+  "disclaimer": {
+    "title": "Disclaimer:",
+    "linksTitle": "Liability for Links",
+    "linksText": "Our website contains links to external third-party websites over whose content we have no control. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not identifiable at the time of linking. A permanent content control of the linked pages is, however, not reasonable without concrete evidence of a legal violation. If we become aware of any legal violations, we will remove such links immediately."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "text1": "The use of our website is generally possible without providing personal data. If personal data (such as name, address or email addresses) is collected on our site, this is always done, as far as possible, on a voluntary basis. This data will not be passed on to third parties without your express consent.",
+    "text2": "We point out that data transmission over the Internet (e.g., when communicating via email) can have security gaps. Complete protection of data from access by third parties is not possible.",
+    "text3": "The use of contact data published within the scope of the legal notice obligation by third parties for the purpose of sending unsolicited advertising and information materials is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information, such as spam emails."
+  }
+}

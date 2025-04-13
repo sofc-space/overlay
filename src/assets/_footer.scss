@@ -1,0 +1,39 @@
+@use "colors";
+
+.page-footer {
+  padding: 1rem;
+  background-color: colors.$bg-solid-2;
+  border-top: .1rem solid colors.$border-1;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+
+  > * {
+    flex-grow: 1;
+  }
+
+  .page-footer-copyright {
+    font-size: .75rem;
+    color: colors.$primary;
+  }
+
+  .page-footer-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+
+    img {
+      height: 1.25rem;
+    }
+  }
+
+  .language-selector {
+    text-align: right;
+    select {
+      min-width: 10rem;
+    }
+  }
+}

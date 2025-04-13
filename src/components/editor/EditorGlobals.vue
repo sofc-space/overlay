@@ -1,41 +1,50 @@
 <script setup>
-defineProps(["globals"]);
+import i18n from "@/i18n.js";
 
-const langMap = {
-  "en": "English",
-  "de": "Deutsch",
-};
+const availableLocales = i18n.global.availableLocales;
+
+defineProps(["globals"]);
 </script>
 
 <template>
   <div class="editor-globals">
     <div class="editor-steam64id">
-      <label>Steam64 ID</label>
+      <label>
+        {{ $t("editor.globals.steam64Id_label") }}:
+      </label>
       <input type="text" v-model="globals.steam64Id" />
       <small>
-        <a href="https://www.steamidfinder.com/" target="_blank">how to find this</a>
+        <a href="https://www.steamidfinder.com/" target="_blank">
+          {{ $t("editor.globals.steam64Id_description") }}
+        </a>
       </small>
     </div>
     <div class="editor-scaling">
-      <label>Scaling</label>
+      <label>
+        {{ $t("editor.globals.scaling_label") }}:
+      </label>
       <select v-model="globals.scaling">
         <option v-for="scale in Array.from({ length: 18 }, (value, index) => index < 9 ? ((index+1)/10) : index-8)" :value="(scale < 1 ? ('0' + scale*10) : scale)" :key="scale">{{ scale }}</option>>
       </select>
       <small>
-        size of your text
+        {{ $t("editor.globals.scaling_description") }}
       </small>
     </div>
     <div class="editor-lang">
-      <label>Language</label>
+      <label>
+        {{ $t("editor.globals.language_label") }}:
+      </label>
       <select v-model="globals.lang">
-        <option v-for="(value, key) in langMap" :value="key" :key="key">{{ value }}</option>>
+        <option v-for="locale in availableLocales" :value="locale" :key="locale">{{ $t("locale." + locale) }}</option>
       </select>
       <small>
-        language of your text
+        {{ $t("editor.globals.language_description") }}
       </small>
     </div>
     <div class="editor-showTimespan">
-      <input type="checkbox" v-model="globals.definition.showTimeRange" id="showTimeRange"> <label for="showTimeRange">show time range</label>
+      <input type="checkbox" v-model="globals.definition.showTimeRange" id="showTimeRange">&nbsp;<label for="showTimeRange">
+      {{ $t("editor.globals.timerange_label") }}
+    </label>
     </div>
   </div>
 </template>

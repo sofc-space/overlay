@@ -48,6 +48,9 @@ importers:
       vite-plugin-vue-devtools:
         specifier: ^7.7.2
         version: 7.7.2(rollup@4.40.0)(vite@6.2.6(sass-embedded@1.86.3)(sass@1.86.3))(vue@3.5.13)
+      vue-cookies:
+        specifier: ^1.8.6
+        version: 1.8.6
 
 packages:
 
@@ -1486,6 +1489,9 @@ packages:
       yaml:
         optional: true
 
+  vue-cookies@1.8.6:
+    resolution: {integrity: sha512-e2kYaHj1Y/zVsBSM3KWlOoVJ5o3l4QZjytNU7xdCgmkw3521CMUerqHekBGZKXXC1oRxYljBeeOK2SCel6cKuw==}
+
   vue-i18n@10.0.7:
     resolution: {integrity: sha512-bKsk0PYwP9gdYF4nqSAT0kDpnLu1gZzlxFl885VH4mHVhEnqP16+/mAU05r1U6NIrc0fGDWP89tZ8GzeJZpe+w==}
     engines: {node: '>= 16'}
@@ -2841,6 +2847,8 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.86.3
       sass-embedded: 1.86.3
+
+  vue-cookies@1.8.6: {}
 
   vue-i18n@10.0.7(vue@3.5.13):
     dependencies:

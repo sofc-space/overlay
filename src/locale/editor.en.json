@@ -1,0 +1,117 @@
+{
+  "general": {
+    "title": "Editor",
+    "description": "Create your own overlay!"
+  },
+  "globals": {
+    "steam64Id_label": "Steam-64 ID",
+    "steam64Id_description": "How to find your Steam-64 ID.",
+    "scaling_label": "Scaling",
+    "scaling_description": "Scaling of your overlay",
+    "language_label": "Language",
+    "language_description": "Language of your overlay",
+    "timerange_label": "Show the time range of your data"
+  },
+  "preview": {
+    "url_label": "Link",
+    "url_copy": "Copy link",
+    "ratio_label": "Aspect ratio (width / height)"
+  },
+  "color": {
+    "scheme": {
+      "label": "Color scheme",
+      "dark": "dark",
+      "darker": "darker",
+      "darkest": "darkest",
+      "thedark": "the dark!",
+      "semi": "semi-transparent",
+      "transparent": "transparent"
+    }
+  },
+  "actions": {
+    "delete_row": "Delete row",
+    "add_row": "Add row",
+    "delete_group": "Delete group",
+    "add_group": "Add group",
+    "delete_metric": "Delete metric",
+    "add_metric": "Add metric",
+    "import": {
+      "button": "Import",
+      "title": "Import configuration",
+      "description": "Paste your URL here to import the configuration.",
+      "label": "Configuration",
+      "error_msg": "Error while importing: {msg}"
+    }
+  },
+  "metric": {
+    "props": {
+      "edit": "Edit parameters",
+      "edit_title": "Edit {title}"
+    },
+    "types": {
+      "adr": {
+        "label": "ADR"
+      },
+      "current_season_win": {
+        "label": "S2 – Wins"
+      },
+      "death": {
+        "label": "Deaths"
+      },
+      "hs_rate": {
+        "label": "Headshot rate"
+      },
+      "kd": {
+        "label": "K/D"
+      },
+      "kill": {
+        "label": "Kills"
+      },
+      "loss": {
+        "label": "Losses"
+      },
+      "matches": {
+        "label": "Matches"
+      },
+      "premier_current": {
+        "label": "Premier rank (current)"
+      },
+      "premier_start": {
+        "label": "Premier rank (start)"
+      },
+      "tie": {
+        "label": "Draws"
+      },
+      "win": {
+        "label": "Wins"
+      },
+      "winrate": {
+        "label": "Win rate"
+      },
+      "delimiter": {
+        "label": "Delimiter",
+        "props": {
+          "char": "Character"
+        }
+      },
+      "static": {
+        "label": "Text",
+        "props": {
+          "label": "Label",
+          "value": "Value",
+          "color": "Color scheme",
+          "color_values": {
+            "great": "Great",
+            "good": "Good",
+            "semi": "Okayish",
+            "average": "Average",
+            "subpar": "Below average",
+            "poor": "Poor",
+            "ct": "Counter-Terrorists",
+            "t": "Terrorists"
+          }
+        }
+      }
+    }
+  }
+}

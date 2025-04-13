@@ -1,0 +1,99 @@
+{
+  "title": "Datenschutzerklärung",
+  "preamble_title": "Präambel",
+  "preamble_text1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als \"Daten\" bezeichnet) wir zu welchen Zwecken und in welchem Umfang im Rahmen der Bereitstellung unserer Applikation verarbeiten.",
+  "preamble_text2": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
+  "preamble_date": "Stand: 13. April 2025",
+  "index_title": "Inhaltsübersicht",
+  "responsible_title": "Verantwortlicher",
+  "imprint": "Impressum",
+  "responsible_info": {
+    "name": "Hendrik Heinle",
+    "street": "Ackerstr. 2A",
+    "city": "41065 Mönchengladbach",
+    "country": "Deutschland",
+    "email": "info[at]hendrik-heinle.de",
+    "phone": "017658864507",
+    "imprint": "https://cs2stats.sofc.dev/imprint"
+  },
+  "overview_title": "Übersicht der Verarbeitungen",
+  "overview_intro": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+  "overview_data_types_title": "Arten der verarbeiteten Daten",
+  "overview_data_types": [
+    "Kontaktdaten",
+    "Inhaltsdaten",
+    "Nutzungsdaten",
+    "Meta-, Kommunikations- und Verfahrensdaten",
+    "Protokolldaten"
+  ],
+  "overview_subjects_title": "Kategorien betroffener Personen",
+  "overview_subjects": [
+    "Nutzer"
+  ],
+  "overview_purposes_title": "Zwecke der Verarbeitung",
+  "overview_purposes": [
+    "Kommunikation",
+    "Feedback",
+    "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit",
+    "Informationstechnische Infrastruktur",
+    "Öffentlichkeitsarbeit"
+  ],
+  "legal_basis_title": "Maßgebliche Rechtsgrundlagen",
+  "legal_basis_dsgvo": "Maßgebliche Rechtsgrundlagen nach der DSGVO: Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte beachten Sie, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.",
+  "legal_basis_legit_interest": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f DSGVO) – die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten erforderlich, sofern nicht die Interessen oder Grundrechte und Grundfreiheiten der betroffenen Person überwiegen.",
+  "legal_basis_germany": "Nationale Datenschutzregelungen in Deutschland: Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland. Dazu gehört insbesondere das Bundesdatenschutzgesetz (BDSG), das unter anderem spezielle Regelungen zum Auskunftsrecht, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke sowie zur Übermittlung und zur automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling enthält.",
+  "legal_basis_switzerland": "Hinweis auf Geltung DSGVO und Schweizer DSG: Diese Datenschutzhinweise dienen sowohl der Informationserteilung nach dem Schweizer DSG als auch nach der Datenschutzgrundverordnung (DSGVO). Aus diesem Grund verwenden wir zur besseren Verständlichkeit die Begriffe der DSGVO. Die gesetzliche Bedeutung der Begriffe wird jedoch im Rahmen der Geltung des Schweizer DSG weiterhin nach dem Schweizer DSG bestimmt.",
+  "security_measures_title": "Sicherheitsmaßnahmen",
+  "security_measures_intro": "Wir treffen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.",
+  "security_measures_details": [
+    "Vertraulichkeit, Integrität und Verfügbarkeit von Daten",
+    "Zugangskontrollen und sichere Infrastruktur",
+    "Datenminimierung und Datenschutz durch Technikgestaltung",
+    "IP-Anonymisierung (IP-Masking)",
+    "TLS-/SSL-Verschlüsselung (HTTPS)"
+  ],
+  "data_storage_title": "Allgemeine Informationen zur Datenspeicherung und Löschung",
+  "data_storage_texts": [
+    "Wir löschen personenbezogene Daten gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen bestehen.",
+    "Ausnahmen bestehen bei gesetzlichen Aufbewahrungspflichten oder besonderen Interessen.",
+    "Archivierte Daten werden ausschließlich aus rechtlich zulässigen Gründen verarbeitet.",
+    "Bei mehreren Aufbewahrungsfristen gilt stets die längste.",
+    "Fristen beginnen in der Regel am Ende des Kalenderjahres, sofern nicht anders angegeben.",
+    "Bei laufenden Verträgen beginnt die Frist mit Beendigung des Rechtsverhältnisses."
+  ],
+  "data_storage_additional": "Weitere Informationen zur Speicherung und Löschung finden sich bei den jeweiligen Verarbeitungsvorgängen.",
+  "data_storage_retention": {
+    "10_years": "Aufbewahrung von Büchern, Aufzeichnungen, Jahresabschlüssen, Inventaren etc.",
+    "8_years": "Aufbewahrung von Buchungsbelegen wie Rechnungen und Kostenbelegen.",
+    "6_years": "Geschäftsunterlagen wie Handels- oder Geschäftsbriefe.",
+    "3_years": "Daten für die Geltendmachung von Gewährleistungs- und Schadensersatzansprüchen."
+  },
+  "data_subject_rights_title": "Rechte der betroffenen Personen",
+  "data_subject_rights": [
+    "Widerspruchsrecht gegen die Verarbeitung aus besonderen Gründen.",
+    "Recht auf Widerruf von Einwilligungen.",
+    "Auskunftsrecht über gespeicherte Daten.",
+    "Recht auf Berichtigung unrichtiger Daten.",
+    "Recht auf Löschung oder Einschränkung der Verarbeitung.",
+    "Recht auf Datenübertragbarkeit.",
+    "Beschwerderecht bei einer Aufsichtsbehörde."
+  ],
+  "hosting_title": "Bereitstellung des Onlineangebots und Webhosting",
+  "hosting_text": "Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste bereitzustellen. Dazu gehört auch die Übermittlung von Inhalten und Funktionen an das Endgerät des Nutzers sowie die Aufrechterhaltung der Systemintegrität.",
+  "cookies_title": "Einsatz von Cookies",
+  "cookies_text": "Wir verwenden Cookies zur Verbesserung der Funktionalität, Sicherheit, des Komforts und für Analysen. Soweit erforderlich, holen wir vorher die Einwilligung der Nutzer ein, ansonsten stützen wir uns auf berechtigte Interessen.",
+  "cookies_types": {
+    "temporary": "Temporäre Cookies (Session-Cookies) werden nach Verlassen des Onlineangebots gelöscht.",
+    "permanent": "Permanente Cookies bleiben gespeichert und ermöglichen Funktionen wie das Merken des Login-Status oder bevorzugter Inhalte."
+  },
+  "social_media_title": "Präsenzen in sozialen Netzwerken (Social Media)",
+  "social_media_text": "Wir unterhalten Onlinepräsenzen in sozialen Netzwerken, um zu kommunizieren und Informationen bereitzustellen. Nutzerdaten können dabei außerhalb der EU verarbeitet und zu Werbezwecken genutzt werden.",
+  "social_media_youtube": {
+    "title": "YouTube",
+    "provider": "Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland",
+    "privacy_policy": "https://policies.google.com/privacy",
+    "opt_out": "https://myadcenter.google.com/personalizationoff"
+  },
+  "updates_title": "Änderung und Aktualisierung",
+  "updates_text": "Bitte informieren Sie sich regelmäßig über den Inhalt unserer Datenschutzerklärung. Änderungen machen ggf. eine neue Einwilligung oder Mitteilung erforderlich."
+}

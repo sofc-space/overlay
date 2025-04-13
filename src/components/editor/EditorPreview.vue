@@ -31,18 +31,18 @@ function calcRatio() {
 <div class="editor-preview">
   <div class="editor-preview-input-wrapper">
     <div class="url-wrapper">
-      <label>URL:</label>
+      <label>{{ $t('editor.preview.url_label') }}:</label>
       <div class="input-button-group">
         <input type="text" :value="getUrl()" disabled/>
-        <button @click="copyUrl" class="text-primary">
+        <button @click="copyUrl" class="text-primary" :title="$t('editor.preview.url_copy')">
           <i-material-symbols-content-copy-rounded />
         </button>
       </div>
     </div>
     <div class="ratio-wrapper">
-      <label>preview ratio (W x H):</label><br>
+      <label>{{ $t('editor.preview.ratio_label') }}:</label><br>
       <input type="number" v-model="width" @input="calcRatio" />
-      x
+      /
       <input type="number" v-model="height" @input="calcRatio" />
     </div>
   </div>

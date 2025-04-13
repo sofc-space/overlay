@@ -7,9 +7,10 @@ import EditorBlocks from "@/components/editor/EditorBlocks.vue";
 import defaultDefinition from "@/assets/metric/default_definition.json";
 import EditorImport from "@/components/editor/EditorImport.vue";
 import {useRouter} from "vue-router";
-import {encodeBase64} from "@/base64.js";
-import getParameterValue from "@/parameter.js";
+import getParameterValue, {findParameterValue} from "@/parameter.js";
 import {readDefinition, writeDefinition} from "@/definition.js";
+import LanguageSelector from "@/components/i18n/LanguageSelector.vue";
+import PageFooter from "@/components/page/PageFooter.vue";
 const { currentRoute, push } = useRouter();
 
 const steam64Id = ref("");
@@ -26,7 +27,7 @@ const globals = ref({
 
 steam64Id.value = getParameterValue("steam64Id", "76561199388500493");
 scaling.value = getParameterValue("scaling", "1");
-lang.value = getParameterValue("lang", "en");
+lang.value = getParameterValue("editor_lang", getParameterValue("lang", "en"));
 definition.value = readDefinition(getParameterValue("definition", writeDefinition(defaultDefinition)));
 
 watch(globals.value, (value) => {
@@ -35,7 +36,7 @@ watch(globals.value, (value) => {
       ...currentRoute.value.query,
       ["steam64Id"]: value.steam64Id,
       ["scaling"]: value.scaling,
-      ["lang"]: value.lang,
+      ["editor_lang"]: value.lang,
       ["definition"]: writeDefinition(value.definition),
     },
   });
@@ -48,8 +49,12 @@ watch(globals.value, (value) => {
     <div class="editor">
       <div class="editor-header">
         <div class="editor-header-title">
-          <h1>Editor</h1>
-          <small>build your own overlay</small>
+          <h1>
+            {{ $t("editor.general.title") }}
+          </h1>
+          <small>
+            {{ $t("editor.general.description") }}
+          </small>
         </div>
         <div class="editor-header-actions">
           <EditorImport :globals="globals" />

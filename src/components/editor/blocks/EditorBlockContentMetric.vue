@@ -21,12 +21,12 @@ const availableMetricsSorted = Object.keys(availableMetrics).sort((a, b) => avai
   <div class="editor-block-metric">
     <div class="editor-block-metric-selector">
       <select v-model="metricKey">
-        <option v-for="k in availableMetricsSorted" :key="k" :value="k">{{ availableMetrics[k].label }}</option>
+        <option v-for="k in availableMetricsSorted" :key="k" :value="k">{{ $t('editor.metric.types.' + availableMetrics[k].label + ".label") }}</option>
       </select>
     </div>
     <div class="editor-block-metric-actions">
       <EditorMetricProps v-if="props.metric.props" :metric="props.metric" :metricDefinition="availableMetrics[metricKey]" />
-      <button @click="() => $emit('deleteItem')" class="text-poor" title="delete single metric">
+      <button @click="() => $emit('deleteItem')" class="text-poor" :title="$t('editor.actions.delete_metric')">
         <i-material-symbols-delete-rounded />
       </button>
     </div>

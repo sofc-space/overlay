@@ -1,0 +1,99 @@
+{
+  "title": "Privacy Policy",
+  "preamble_title": "Preamble",
+  "preamble_text1": "With the following privacy policy, we would like to inform you about the types of your personal data (hereinafter also referred to as 'data'), the purposes and scope of its processing within the scope of providing our application.",
+  "preamble_text2": "The terms used are not gender-specific.",
+  "preamble_date": "As of: April 13, 2025",
+  "index_title": "Table of Contents",
+  "responsible_title": "Responsible Party",
+  "imprint": "Imprint",
+  "responsible_info": {
+    "name": "Hendrik Heinle",
+    "street": "Ackerstr. 2A",
+    "city": "41065 Mönchengladbach",
+    "country": "Germany",
+    "email": "info[at]hendrik-heinle.de",
+    "phone": "017658864507",
+    "imprint": "https://cs2stats.sofc.dev/imprint"
+  },
+  "overview_title": "Overview of Processing Activities",
+  "overview_intro": "The following overview summarizes the types of data processed and the purposes of their processing, and refers to the data subjects.",
+  "overview_data_types_title": "Types of Processed Data",
+  "overview_data_types": [
+    "Contact data",
+    "Content data",
+    "Usage data",
+    "Meta, communication and procedural data",
+    "Log data"
+  ],
+  "overview_subjects_title": "Categories of Data Subjects",
+  "overview_subjects": [
+    "Users"
+  ],
+  "overview_purposes_title": "Purposes of Processing",
+  "overview_purposes": [
+    "Communication",
+    "Feedback",
+    "Provision of our online service and user-friendliness",
+    "Information technology infrastructure",
+    "Public relations"
+  ],
+  "legal_basis_title": "Relevant Legal Bases",
+  "legal_basis_dsgvo": "Relevant legal bases under the GDPR: Below is an overview of the legal bases of the GDPR on which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence. If more specific legal bases are applicable in individual cases, we will inform you of these in the privacy policy.",
+  "legal_basis_legit_interest": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR) – Processing is necessary for the purposes of the legitimate interests pursued by the controller or a third party unless overridden by the interests or fundamental rights and freedoms of the data subject.",
+  "legal_basis_germany": "National data protection regulations in Germany: In addition to the GDPR, national data protection regulations apply in Germany. This includes, in particular, the Federal Data Protection Act (BDSG), which contains specific provisions on the right to access, the right to deletion, the right to object, the processing of special categories of personal data, processing for other purposes, and the transfer as well as automated decision-making in individual cases including profiling.",
+  "legal_basis_switzerland": "Notice on applicability of GDPR and Swiss DPA: These privacy notices serve both to provide information in accordance with the Swiss DPA and the General Data Protection Regulation (GDPR). Therefore, we use the terminology of the GDPR for broader applicability and clarity. Nevertheless, the legal meaning of the terms will continue to be determined under the Swiss DPA where applicable.",
+  "security_measures_title": "Security Measures",
+  "security_measures_intro": "We take appropriate technical and organizational measures to ensure a level of security appropriate to the risk.",
+  "security_measures_details": [
+    "Confidentiality, integrity, and availability of data",
+    "Access controls and secure infrastructure",
+    "Data minimization and privacy by design",
+    "IP anonymization (IP masking)",
+    "TLS/SSL encryption (HTTPS)"
+  ],
+  "data_storage_title": "General Information on Data Storage and Deletion",
+  "data_storage_texts": [
+    "We delete personal data in accordance with legal requirements when the underlying consents are revoked or no further legal basis exists for processing.",
+    "Exceptions include legal obligations or special interests requiring longer retention.",
+    "Archived data is processed solely for legally justified reasons.",
+    "If multiple retention periods exist, the longest applies.",
+    "Periods generally begin at the end of the calendar year unless otherwise specified.",
+    "In ongoing contractual relationships, the trigger is the termination or end of the legal relationship."
+  ],
+  "data_storage_additional": "Additional information on storage and deletion is provided for specific processes.",
+  "data_storage_retention": {
+    "10_years": "Retention of books, records, financial statements, inventories, etc.",
+    "8_years": "Retention of booking records such as invoices and cost receipts.",
+    "6_years": "Business documents like received or sent commercial letters.",
+    "3_years": "Data required for warranty, compensation claims, or inquiries."
+  },
+  "data_subject_rights_title": "Rights of Data Subjects",
+  "data_subject_rights": [
+    "Right to object to processing for reasons arising from their particular situation.",
+    "Right to withdraw consent at any time.",
+    "Right of access to data and related information.",
+    "Right to rectification of inaccurate data.",
+    "Right to deletion or restriction of processing.",
+    "Right to data portability.",
+    "Right to lodge a complaint with a supervisory authority."
+  ],
+  "hosting_title": "Provision of Online Services and Web Hosting",
+  "hosting_text": "We process users’ data to provide our online services. This includes transmitting content and features to users’ devices and maintaining system integrity.",
+  "cookies_title": "Use of Cookies",
+  "cookies_text": "We use cookies to enhance functionality, security, comfort, and for analytics. Consent is obtained where required; otherwise, we rely on legitimate interests.",
+  "cookies_types": {
+    "temporary": "Temporary cookies (session cookies) are deleted after the user leaves the online service.",
+    "permanent": "Permanent cookies remain stored and allow functionality like remembering login status or user preferences."
+  },
+  "social_media_title": "Presence on Social Media Platforms",
+  "social_media_text": "We maintain profiles on social media platforms to communicate and provide information. User data may be processed outside the EU and for advertising purposes by platform providers.",
+  "social_media_youtube": {
+    "title": "YouTube",
+    "provider": "Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland",
+    "privacy_policy": "https://policies.google.com/privacy",
+    "opt_out": "https://myadcenter.google.com/personalizationoff"
+  },
+  "updates_title": "Changes and Updates",
+  "updates_text": "We encourage users to regularly review our privacy policy. Updates will be made as necessary and may require renewed consent or communication of changes."
+}

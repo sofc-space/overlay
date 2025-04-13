@@ -1,11 +1,20 @@
-$great: #4dc49e !default;
-$good: #9ccc72 !default;
-$semi: #60abbd !default;
-$average: #dedede !default;
-$subpar: #f7cd60 !default;
-$poor: #f77c60 !default;
-$ct-color: #84abf1 !default;
-$t-color: #de9b35 !default;
+//$great: #4dc49e !default;
+//$good: #9ccc72 !default;
+//$semi: #60abbd !default;
+//$average: #dedede !default;
+//$subpar: #f7cd60 !default;
+//$poor: #f77c60 !default;
+//$ct-color: #84abf1 !default;
+//$t-color: #de9b35 !default;
+
+$great: #4ac89c !default;      // leicht kühler, etwas mehr Sättigung
+$good: #a0d36f !default;       // heller, frischer Grünton
+$semi: #64b1c2 !default;       // blauer, moderneres Cyan
+$average: #e0e0e0 !default;    // ganz leicht heller – neutraler Grau
+$subpar: #f8d062 !default;     // etwas goldener, wärmer
+$poor: #f76e58 !default;       // etwas röter, leicht intensiver
+$ct-color: #88b2f4 !default;   // mehr Leuchtkraft, minimal heller
+$t-color: #e1a347 !default;    // kräftiger, aber harmonisch warm
 
 $premierRanks: (
   "ancient": #EB4B4B,
@@ -17,17 +26,25 @@ $premierRanks: (
   "common": #B1C3D9,
 );
 
-$bg-solid: #19171e !default;
-$bg-solid-1: #201e25 !default;
-$bg-solid-2: #25222c !default;
-$bg-solid-3: #2a2732 !default;
-$bg-semi-transparent: #19171ee0 !default;
-$bg-transparent: rgba(25, 23, 30, 0.56) !default;
+//$bg-solid: #19171e !default;
+//$bg-solid-1: #201e25 !default;
+//$bg-solid-2: #25222c !default;
+//$bg-solid-3: #2a2732 !default;
+//$bg-semi-transparent: #19171ee0 !default;
+//$bg-transparent: rgba(25, 23, 30, 0.56) !default;
+
+$bg-solid: #0b0f1a !default;
+$bg-solid-1: #101422 !default;
+$bg-solid-2: #141827 !default;
+$bg-solid-3: #181d2d !default;
+$bg-semi-transparent: #0b0f1ae0 !default;
+$bg-transparent: rgba(11, 15, 26, 0.56) !default;
 
 $bg-solid_solid: #19171e !default;
 $bg-semi-transparent_solid: rgba(25, 23, 30, 0.99) !default;
 $bg-transparent_solid: #19171ee0 !default;
 
-$primary: #6c2883 !default; //#e5296a !default;
+//$primary: #6c2883 !default; //#e5296a !default;
+$primary: #f4435c !default;
 
-$border-1: #2F2B38 !default;
+$border-1: #2d2a35 !default;
