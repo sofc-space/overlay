@@ -18,8 +18,8 @@ function getDefinitionBase64() {
   return encodeBase64(JSON.stringify(props.definition))
 }
 
-const width = ref(250);
-const height = ref(150);
+const width = ref(5);
+const height = ref(3);
 const ratio = ref(height.value / width.value * 100)
 
 function calcRatio() {
