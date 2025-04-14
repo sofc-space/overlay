@@ -15,6 +15,9 @@ import LanguageSelector from "@/components/i18n/LanguageSelector.vue";
       <a href="https://www.twitch.tv/de_sofc" target="_blank">
         <i-fa6-brands-twitch /> de_sofc
       </a>
+      <a href="https://github.com/sofc-space/overlay" target="_blank">
+        <i-fa6-brands-github /> Open Source
+      </a>
       <div>
         {{ $t("credits") }}
         <a href="https://leetify.com/" target="_blank">
