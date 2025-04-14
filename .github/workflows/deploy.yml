@@ -1,0 +1,22 @@
+name: Deploy Frontend
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm run build
+      - name: Remove old Frontend files
+        run: sudo rm -rf /srv/cs2stats/frontend/*
+      - name: Deploy files
+        run: sudo mv dist/* /srv/cs2stats/frontend/
