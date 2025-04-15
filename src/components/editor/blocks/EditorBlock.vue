@@ -1,8 +1,9 @@
 <script setup>
 import EditorBlockContentItem from "@/components/editor/blocks/EditorBlockContentItem.vue";
 import {updateMetric} from "@/definition.js";
+import EditorDropzone from "@/components/editor/blocks/EditorDropzone.vue";
 
-const props = defineProps(["container"])
+const props = defineProps(["container", "definition", "index"])
 defineEmits(['removeContainer']);
 
 function addMetric() {
@@ -51,7 +52,8 @@ function addGroup() {
       </div>
     </div>
     <div class="editor-block">
-      <EditorBlockContentItem v-for="(child, index) in container.content" :key="child" :item="child" @deleteItem="() => container.content.splice(index, 1)" @changeMetric="target => updateMetric(container.content, index, target)" />
+      <EditorDropzone :container="container.content" index="0" :definition="definition" neighbour="" />
+      <EditorBlockContentItem v-for="(child, index) in container.content" :key="child" :item="child" :container="container.content" :index="index" :pointer="props.index + '-' + index" :definition="definition" @deleteItem="() => container.content.splice(index, 1)" @changeMetric="target => updateMetric(container.content, index, target)" />
     </div>
   </div>
 </template>

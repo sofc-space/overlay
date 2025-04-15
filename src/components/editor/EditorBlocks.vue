@@ -14,7 +14,7 @@ function addContainer() {
 
 <template>
   <div class="editor-blocks">
-    <EditorBlock v-for="(container, index) in definition.containers" :key="index" :container="container" @removeContainer="() => props.definition.containers.splice(index, 1)" />
+    <EditorBlock v-for="(container, index) in definition.containers" :key="index" :container="container" :definition="definition" :index="index" @removeContainer="() => props.definition.containers.splice(index, 1)" />
     <div class="editor-blocks-footer">
       <button @click="addContainer" :title="$t('editor.actions.add_row')" class="text-great">
         <i-material-symbols-add-row-below-rounded />
