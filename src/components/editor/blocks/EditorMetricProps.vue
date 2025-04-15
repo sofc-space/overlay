@@ -1,7 +1,7 @@
 <script setup>
 import {getCurrentInstance} from "vue";
 
-defineProps(["metric", "metricDefinition"]);
+defineProps(["metric", "group", "metricDefinition"]);
 
 const {uid} = getCurrentInstance()
 
@@ -16,17 +16,17 @@ function editProps() {
   </button>
   <dialog :id="'editor-metric-prop-' + uid">
       <div class="dialog-header">
-        <h2>{{ $t("editor.metric.props.edit_title", {title: $t("editor.metric.types." + metricDefinition.label + ".label")}) }}</h2>
+        <h2>{{ $t("editor.metric.props.edit_title", {title: $t("editor.metric.types." + group + "." + metricDefinition.label + ".label")}) }}</h2>
         <form method="dialog">
           <button class="text-poor"><i-material-symbols-close-rounded /></button>
         </form>
       </div>
       <div class="dialog-body">
         <div v-for="(prop, label) in metricDefinition.props">
-          <label>{{ $t("editor.metric.types." + metricDefinition.label + ".props." + label) }}</label><br>
+          <label>{{ $t("editor.metric.types." + group + "." + metricDefinition.label + ".props." + label) }}</label><br>
           <select v-if="Array.isArray(prop)" v-model="metric.props[label]">
             <option v-for="v in prop" :value="v">
-              {{ $t("editor.metric.types." + metricDefinition.label + ".props." + label + "_values." + v) }}
+              {{ $t("editor.metric.types." + group + "." + metricDefinition.label + ".props." + label + "_values." + v) }}
             </option>
           </select>
           <input :type="prop" v-model="metric.props[label]" v-else />

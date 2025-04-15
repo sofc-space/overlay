@@ -26,7 +26,8 @@
       "darkest": "darkest",
       "thedark": "the dark!",
       "semi": "semi-transparent",
-      "transparent": "transparent"
+      "transparent": "transparent",
+      "invisible": "invisible"
     }
   },
   "actions": {
@@ -45,71 +46,199 @@
     }
   },
   "metric": {
+    "groups": {
+      "session": "Current Session",
+      "overall": "Complete",
+      "static": "Static Content",
+      "premier_season": "Premier Season 2"
+    },
     "props": {
       "edit": "Edit parameters",
       "edit_title": "Edit {title}"
     },
     "types": {
-      "adr": {
-        "label": "ADR"
+      "session": {
+        "adr": {
+          "label": "ADR"
+        },
+        "death": {
+          "label": "Deaths"
+        },
+        "hs_rate": {
+          "label": "Headshot rate"
+        },
+        "kd": {
+          "label": "K/D"
+        },
+        "kill": {
+          "label": "Kills"
+        },
+        "loss": {
+          "label": "Losses"
+        },
+        "matches": {
+          "label": "Matches"
+        },
+        "premier_current": {
+          "label": "Premier rank (current)"
+        },
+        "premier_start": {
+          "label": "Premier rank (start)"
+        },
+        "tie": {
+          "label": "Draws"
+        },
+        "win": {
+          "label": "Wins"
+        },
+        "winrate": {
+          "label": "Win rate"
+        },
+        "leetify_rating": {
+          "label": "Leetify rating"
+        }
       },
-      "current_season_win": {
-        "label": "S2 – Wins"
-      },
-      "death": {
-        "label": "Deaths"
-      },
-      "hs_rate": {
-        "label": "Headshot rate"
-      },
-      "kd": {
-        "label": "K/D"
-      },
-      "kill": {
-        "label": "Kills"
-      },
-      "loss": {
-        "label": "Losses"
-      },
-      "matches": {
-        "label": "Matches"
-      },
-      "premier_current": {
-        "label": "Premier rank (current)"
-      },
-      "premier_start": {
-        "label": "Premier rank (start)"
-      },
-      "tie": {
-        "label": "Draws"
-      },
-      "win": {
-        "label": "Wins"
-      },
-      "winrate": {
-        "label": "Win rate"
-      },
-      "delimiter": {
-        "label": "Delimiter",
-        "props": {
-          "char": "Character"
+      "premier_season": {
+        "current_season_win": {
+          "label": "S2 - wins"
+        },
+        "current_season_loss": {
+          "label": "S2 - losses"
+        },
+        "current_season_tie": {
+          "label": "S2 - ties"
+        },
+        "current_season_winrate": {
+          "label": "S2 - winrate"
         }
       },
       "static": {
-        "label": "Text",
-        "props": {
-          "label": "Label",
-          "value": "Value",
-          "color": "Color scheme",
-          "color_values": {
-            "great": "Great",
-            "good": "Good",
-            "semi": "Okayish",
-            "average": "Average",
-            "subpar": "Below average",
-            "poor": "Poor",
-            "ct": "Counter-Terrorists",
-            "t": "Terrorists"
+        "delimiter": {
+          "label": "Delimiter",
+          "props": {
+            "char": "-"
+          }
+        },
+        "static": {
+          "label": "Text",
+          "props": {
+            "label": "Label",
+            "value": "Value",
+            "color": "Color scheme",
+            "color_values": {
+              "great": "Great",
+              "good": "Good",
+              "semi": "Okayish",
+              "average": "Average",
+              "subpar": "Below average",
+              "poor": "Poor",
+              "ct": "Counter-Terrorists",
+              "t": "Terrorists"
+            }
+          }
+        }
+      },
+      "overall": {
+        "winrate": {
+          "label": "Leetify: Overall winrate"
+        },
+        "ranks": {
+          "leetify": {
+            "label": "Leetify: Leetify rank"
+          },
+          "premier": {
+            "label": "Leetify: Premier rank"
+          },
+          "faceit": {
+            "label": "Leetify: Faceit level"
+          }
+        },
+        "rating": {
+          "aim": {
+            "label": "Leetify: Aim rating"
+          },
+          "positioning": {
+            "label": "Leetify: Positioning rating"
+          },
+          "utility": {
+            "label": "Leetify: Utility usage rating"
+          },
+          "clutch": {
+            "label": "Leetify: Clutch rating"
+          },
+          "opening": {
+            "label": "Leetify: Opening impact rating"
+          },
+          "ct_leetify": {
+            "label": "Leetify: CT-side Leetify rating"
+          },
+          "t_leetify": {
+            "label": "Leetify: T-side Leetify rating"
+          }
+        },
+        "stats": {
+          "accuracy_enemy_spotted": {
+            "label": "Leetify: Accuracy while enemy is spotted"
+          },
+          "accuracy_head": {
+            "label": "Leetify: Headshot accuracy"
+          },
+          "counter_strafing_good_shots_ratio": {
+            "label": "Leetify: Counter-strafing good shots ratio"
+          },
+          "ct_opening_aggression_success_rate": {
+            "label": "Leetify: CT opening aggression success rate"
+          },
+          "ct_opening_duel_success_percentage": {
+            "label": "Leetify: CT opening duel success rate"
+          },
+          "flashbang_hit_foe_avg_duration": {
+            "label": "Leetify: Average duration enemies are flashed"
+          },
+          "flashbang_hit_foe_per_flashbang": {
+            "label": "Leetify: Enemies flashed per flashbang"
+          },
+          "flashbang_hit_friend_per_flashbang": {
+            "label": "Leetify: Teammates flashed per flashbang"
+          },
+          "flashbang_leading_to_kill": {
+            "label": "Leetify: Kills resulting from flashbangs"
+          },
+          "flashbang_thrown": {
+            "label": "Leetify: Flashbangs thrown per round"
+          },
+          "he_foes_damage_avg": {
+            "label": "Leetify: Average HE grenade damage to enemies"
+          },
+          "he_friends_damage_avg": {
+            "label": "Leetify: Average HE grenade damage to teammates"
+          },
+          "preaim": {
+            "label": "Leetify: Pre-aim percentage"
+          },
+          "reaction_time": {
+            "label": "Leetify: Reaction time in ms"
+          },
+          "spray_accuracy": {
+            "label": "Leetify: Spray accuracy"
+          },
+          "t_opening_aggression_success_rate": {
+            "label": "Leetify: T opening aggression success rate"
+          },
+          "t_opening_duel_success_percentage": {
+            "label": "Leetify: T opening duel success rate"
+          },
+          "traded_deaths_success_percentage": {
+            "label": "Leetify: Percentage of times deaths are traded"
+          },
+          "trade_kill_opportunities_per_round": {
+            "label": "Leetify: Trade kill opportunities per round"
+          },
+          "trade_kills_success_percentage": {
+            "label": "Leetify: Successful trade kills percentage"
+          },
+          "utility_on_death_avg": {
+            "label": "Leetify: Utility value lost on death"
           }
         }
       }

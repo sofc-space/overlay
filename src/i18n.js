@@ -8,6 +8,8 @@ import imprint_de from "@/locale/imprint.de.json";
 import imprint_en from "@/locale/imprint.en.json";
 import data_protection_de from "@/locale/data-protection.de.json";
 import data_protection_en from "@/locale/data-protection.en.json";
+import metrics_de from "@/locale/metrics.de.json";
+import metrics_en from "@/locale/metrics.en.json";
 
 //let locale = getParameterValue("lang", "")
 //if(!locale) {
@@ -64,7 +66,8 @@ const i18n = createI18n({
                 "selector": {
                     "label": "Sprache"
                 }
-            }
+            },
+            metrics: metrics_de
         },
         en: {
             pages: {
@@ -109,13 +112,17 @@ const i18n = createI18n({
                 "selector": {
                     "label": "Language"
                 }
-            }
+            },
+            metrics: metrics_en
         }
     },
     numberFormats: {
         'de': {
             percent: {
                 style: 'percent', useGrouping: false
+            },
+            dollar: {
+                style: 'currency', currency: 'USD'
             },
             twoFractionNumber: {
                 style: 'decimal', minimumFractionDigits: 2, maximumFractionDigits: 2
@@ -124,6 +131,9 @@ const i18n = createI18n({
         'en': {
             percent: {
                 style: 'percent', useGrouping: false
+            },
+            dollar: {
+                style: 'currency', currency: 'USD'
             },
             twoFractionNumber: {
                 style: 'decimal', minimumFractionDigits: 2, maximumFractionDigits: 2

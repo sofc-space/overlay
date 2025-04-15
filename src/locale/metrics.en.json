@@ -1,0 +1,63 @@
+{
+  "session": {
+    "kill": "kills",
+    "death": "deaths",
+    "adr": "adr",
+    "hs_rate": "hs",
+    "kd": "k/d",
+    "loss": "loss",
+    "matches": "matches",
+    "premier_current": "current",
+    "premier_start": "begin",
+    "tie": "tie",
+    "win": "win",
+    "winrate": "winrate",
+    "leetify_rating": "Leetify"
+  },
+  "premier_season": {
+    "current_season_win": "S2 wins",
+    "current_season_loss": "S2 loss",
+    "current_season_tie": "S2 tie",
+    "current_season_winrate": "S2 winrate"
+  },
+  "overall": {
+    "winrate": "Winrate",
+    "ranks": {
+      "leetify": "Leetify",
+      "premier": "Premier",
+      "faceit": "Faceit"
+    },
+    "rating": {
+      "aim": "Aim",
+      "positioning": "Positioning",
+      "utility": "Utility",
+      "clutch": "Clutch",
+      "opening": "Opening",
+      "ct_leetify": "CT Rating",
+      "t_leetify": "T Rating"
+    },
+    "stats": {
+      "accuracy_enemy_spotted": "Spotted Acc",
+      "accuracy_head": "HS Acc",
+      "counter_strafing_good_shots_ratio": "Strafe Acc",
+      "ct_opening_aggression_success_rate": "CT Opening",
+      "ct_opening_duel_success_percentage": "CT Opening Success",
+      "flashbang_hit_foe_avg_duration": "Flash Time",
+      "flashbang_hit_foe_per_flashbang": "Flashed/FB",
+      "flashbang_hit_friend_per_flashbang": "Teamflash/FB",
+      "flashbang_leading_to_kill": "FB Kills",
+      "flashbang_thrown": "FBs/Round",
+      "he_foes_damage_avg": "HE Dmg",
+      "he_friends_damage_avg": "Team HE Dmg",
+      "preaim": "Preaim",
+      "reaction_time": "Reaction",
+      "spray_accuracy": "Spray Acc",
+      "t_opening_aggression_success_rate": "T Opening",
+      "t_opening_duel_success_percentage": "T Opening Success",
+      "traded_deaths_success_percentage": "Trades",
+      "trade_kill_opportunities_per_round": "Trade Opps",
+      "trade_kills_success_percentage": "Trade Rate",
+      "utility_on_death_avg": "Util Lost"
+    }
+  }
+}

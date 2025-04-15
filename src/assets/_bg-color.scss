@@ -1,6 +1,10 @@
 @use "colors";
 @use "custom-scheme";
 
+.bg-invisible {
+  background-color: colors.$bg-invisible;
+}
+
 .bg-transparent {
   background-color: colors.$bg-transparent;
 }

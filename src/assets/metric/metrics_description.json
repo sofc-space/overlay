@@ -1,63 +1,535 @@
 {
-  "adr": {
-    "label": "adr"
+  "session": {
+    "kill": {
+      "label": "kill",
+      "path": "kills",
+      "color": "great"
+    },
+    "death": {
+      "label": "death",
+      "path": "deaths",
+      "color": "poor"
+    },
+    "adr": {
+      "label": "adr",
+      "path": "adr",
+      "number_format": "decimal",
+      "color": [
+        {
+          "value": 0,
+          "color": "average"
+        },
+        {
+          "value": 0.001,
+          "color": "poor"
+        },
+        {
+          "value": 65,
+          "color": "subpar"
+        },
+        {
+          "value": 75,
+          "color": "average"
+        },
+        {
+          "value": 85,
+          "color": "semi"
+        },
+        {
+          "value": 95,
+          "color": "good"
+        },
+        {
+          "value": 100,
+          "color": "great"
+        }
+      ]
+    },
+    "hs_rate": {
+      "label": "hs_rate",
+      "path": "hs",
+      "number_format": "percent"
+    },
+    "kd": {
+      "label": "kd",
+      "path": "kd",
+      "number_format": "decimal",
+      "color": [
+        {
+          "value": 0,
+          "color": "average"
+        },
+        {
+          "value": 0.001,
+          "color": "poor"
+        },
+        {
+          "value": 0.6,
+          "color": "subpar"
+        },
+        {
+          "value": 0.7,
+          "color": "average"
+        },
+        {
+          "value": 0.8,
+          "color": "semi"
+        },
+        {
+          "value": 1,
+          "color": "good"
+        },
+        {
+          "value": 1.25,
+          "color": "great"
+        }
+      ]
+    },
+    "loss": {
+      "label": "loss",
+      "path": "losses",
+      "color": "poor"
+    },
+    "matches": {
+      "label": "matches",
+      "path": "matches"
+    },
+    "premier_current": {
+      "label": "premier_current"
+    },
+    "premier_start": {
+      "label": "premier_start"
+    },
+    "tie": {
+      "label": "tie",
+      "path": "draws",
+      "color": "subpar"
+    },
+    "win": {
+      "label": "win",
+      "path": "wins",
+      "color": "great"
+    },
+    "winrate": {
+      "label": "winrate",
+      "path": "winrate",
+      "number_format": "percent",
+      "color": [
+        {
+          "value": 0,
+          "color": "average"
+        },
+        {
+          "value": 0.001,
+          "color": "poor"
+        },
+        {
+          "value": 0.5,
+          "color": "subpar"
+        },
+        {
+          "value": 0.6,
+          "color": "average"
+        },
+        {
+          "value": 0.65,
+          "color": "semi"
+        },
+        {
+          "value": 0.75,
+          "color": "good"
+        },
+        {
+          "value": 0.85,
+          "color": "great"
+        }
+      ]
+    },
+    "leetify_rating": {
+      "label": "leetify_rating",
+      "path": "leetifyRating",
+      "number_format": "decimal",
+      "label_color": "#f84982",
+      "color": [
+        {
+          "value": -100,
+          "color": "poor"
+        },
+        {
+          "value": -5,
+          "color": "subpar"
+        },
+        {
+          "value": -2,
+          "color": "average"
+        },
+        {
+          "value": 2,
+          "color": "good"
+        },
+        {
+          "value": 5,
+          "color": "great"
+        }
+      ]
+    }
   },
-  "current_season_win": {
-    "label": "current_season_win"
-  },
-  "death": {
-    "label": "death"
-  },
-  "hs_rate": {
-    "label": "hs_rate"
-  },
-  "kd": {
-    "label": "kd"
-  },
-  "kill": {
-    "label": "kill"
-  },
-  "loss": {
-    "label": "loss"
-  },
-  "matches": {
-    "label": "matches"
-  },
-  "premier_current": {
-    "label": "premier_current"
-  },
-  "premier_start": {
-    "label": "premier_start"
-  },
-  "tie": {
-    "label": "tie"
-  },
-  "win": {
-    "label": "win"
-  },
-  "winrate": {
-    "label": "winrate"
-  },
-  "delimiter": {
-    "label": "delimiter",
-    "props": {
-      "char": "text"
+  "overall": {
+    "overall_winrate": {
+      "label": "winrate",
+      "path": "overall.winrate",
+      "number_format": "percent",
+      "color": [
+        {
+          "value": 0,
+          "color": "average"
+        },
+        {
+          "value": 0.001,
+          "color": "poor"
+        },
+        {
+          "value": 0.47,
+          "color": "subpar"
+        },
+        {
+          "value": 0.49,
+          "color": "average"
+        },
+        {
+          "value": 0.51,
+          "color": "semi"
+        },
+        {
+          "value": 0.53,
+          "color": "good"
+        },
+        {
+          "value": 0.55,
+          "color": "great"
+        }
+      ]
+    },
+    "overall_leetify_rating": {
+      "label": "ranks.leetify",
+      "path": "overall.ranks.leetify",
+      "number_format": "decimal",
+      "label_color": "#f84982",
+      "color": [
+        {
+          "value": -100,
+          "color": "poor"
+        },
+        {
+          "value": -5,
+          "color": "subpar"
+        },
+        {
+          "value": -2,
+          "color": "average"
+        },
+        {
+          "value": 2,
+          "color": "good"
+        },
+        {
+          "value": 5,
+          "color": "great"
+        }
+      ]
+    },
+    "overall_premier_rating": {
+      "label": "ranks.premier",
+      "path": "overall.ranks.premier"
+    },
+    "overall_faceit_rating": {
+      "label": "ranks.faceit",
+      "path": "overall.ranks.faceit",
+      "color": [
+        {
+          "value": 1,
+          "color": "#dcdcdc"
+        },
+        {
+          "value": 2,
+          "color": "#47e36e"
+        },
+        {
+          "value": 4,
+          "color": "#ffcf24"
+        },
+        {
+          "value": 8,
+          "color": "#ff6c1f"
+        },
+        {
+          "value": 10,
+          "color": "#e80228"
+        }
+      ]
+    },
+    "overall_rating_aim": {
+      "label": "rating.aim",
+      "path": "overall.rating.aim",
+      "number_format": "decimal"
+    },
+    "overall_rating_positioning": {
+      "label": "rating.positioning",
+      "path": "overall.rating.positioning",
+      "number_format": "decimal"
+    },
+    "overall_rating_utility": {
+      "label": "rating.utility",
+      "path": "overall.rating.utility",
+      "number_format": "decimal"
+    },
+    "overall_rating_clutch": {
+      "label": "rating.clutch",
+      "path": "overall.rating.clutch",
+      "number_format": "decimal"
+    },
+    "overall_rating_opening": {
+      "label": "rating.opening",
+      "path": "overall.rating.opening",
+      "number_format": "decimal"
+    },
+    "overall_rating_ct_leetify": {
+      "label": "rating.ct_leetify",
+      "path": "overall.rating.ctLeetify",
+      "number_format": "decimal",
+      "label_color": "ct",
+      "color": [
+        {
+          "value": -100,
+          "color": "poor"
+        },
+        {
+          "value": -5,
+          "color": "subpar"
+        },
+        {
+          "value": -2,
+          "color": "average"
+        },
+        {
+          "value": 2,
+          "color": "good"
+        },
+        {
+          "value": 5,
+          "color": "great"
+        }
+      ]
+    },
+    "overall_rating_t_leetify": {
+      "label": "rating.t_leetify",
+      "path": "overall.rating.tLeetify",
+      "number_format": "decimal",
+      "label_color": "t",
+      "color": [
+        {
+          "value": -100,
+          "color": "poor"
+        },
+        {
+          "value": -5,
+          "color": "subpar"
+        },
+        {
+          "value": -2,
+          "color": "average"
+        },
+        {
+          "value": 2,
+          "color": "good"
+        },
+        {
+          "value": 5,
+          "color": "great"
+        }
+      ]
+    },
+    "overall_stats_accuracy_enemy_spotted": {
+      "label": "stats.accuracy_enemy_spotted",
+      "path": "overall.stats.accuracyEnemySpotted",
+      "number_format": "decimal"
+    },
+    "overall_stats_accuracy_head": {
+      "label": "stats.accuracy_head",
+      "path": "overall.stats.accuracyHead",
+      "number_format": "decimal"
+    },
+    "overall_stats_counter_strafing_good_shots_ratio": {
+      "label": "stats.counter_strafing_good_shots_ratio",
+      "path": "overall.stats.counterStrafingGoodShotsRatio",
+      "number_format": "decimal"
+    },
+    "overall_stats_ct_opening_aggression_success_rate": {
+      "label": "stats.ct_opening_aggression_success_rate",
+      "path": "overall.stats.ctOpeningAggressionSuccessRate",
+      "number_format": "decimal"
+    },
+    "overall_stats_ct_opening_duel_success_percentage": {
+      "label": "stats.ct_opening_duel_success_percentage",
+      "path": "overall.stats.ctOpeningDuelSuccessPercentage",
+      "number_format": "percent"
+    },
+    "overall_stats_flashbang_hit_foe_avg_duration": {
+      "label": "stats.flashbang_hit_foe_avg_duration",
+      "path": "overall.stats.flashbangHitFoeAvgDuration",
+      "number_format": "decimal"
+    },
+    "overall_stats_flashbang_hit_foe_per_flashbang": {
+      "label": "stats.flashbang_hit_foe_per_flashbang",
+      "path": "overall.stats.flashbangHitFoePerFlashbang",
+      "number_format": "decimal"
+    },
+    "overall_stats_flashbang_hit_friend_per_flashbang": {
+      "label": "stats.flashbang_hit_friend_per_flashbang",
+      "path": "overall.stats.flashbangHitFriendPerFlashbang",
+      "number_format": "decimal"
+    },
+    "overall_stats_flashbang_leading_to_kill": {
+      "label": "stats.flashbang_leading_to_kill",
+      "path": "overall.stats.flashbangLeadingToKill",
+      "number_format": "decimal"
+    },
+    "overall_stats_flashbang_thrown": {
+      "label": "stats.flashbang_thrown",
+      "path": "overall.stats.flashbangThrown",
+      "number_format": "decimal"
+    },
+    "overall_stats_he_foes_damage_avg": {
+      "label": "stats.he_foes_damage_avg",
+      "path": "overall.stats.heFoesDamageAvg",
+      "number_format": "decimal"
+    },
+    "overall_stats_he_friends_damage_avg": {
+      "label": "stats.he_friends_damage_avg",
+      "path": "overall.stats.heFriendsDamageAvg",
+      "number_format": "decimal"
+    },
+    "overall_stats_preaim": {
+      "label": "stats.preaim",
+      "path": "overall.stats.preaim",
+      "number_format": "decimal"
+    },
+    "overall_stats_reaction_time": {
+      "label": "stats.reaction_time",
+      "path": "overall.stats.reactionTime",
+      "number_format": "decimal",
+      "suffix": "ms"
+    },
+    "overall_stats_spray_accuracy": {
+      "label": "stats.spray_accuracy",
+      "path": "overall.stats.sprayAccuracy",
+      "number_format": "decimal"
+    },
+    "overall_stats_t_opening_aggression_success_rate": {
+      "label": "stats.t_opening_aggression_success_rate",
+      "path": "overall.stats.tOpeningAggressionSuccessRate",
+      "number_format": "decimal"
+    },
+    "overall_stats_t_opening_duel_success_percentage": {
+      "label": "stats.t_opening_duel_success_percentage",
+      "path": "overall.stats.tOpeningDuelSuccessPercentage",
+      "number_format": "percent"
+    },
+    "overall_stats_traded_deaths_success_percentage": {
+      "label": "stats.traded_deaths_success_percentage",
+      "path": "overall.stats.tradedDeathsSuccessPercentage",
+      "number_format": "percent"
+    },
+    "overall_stats_trade_kill_opportunities_per_round": {
+      "label": "stats.trade_kill_opportunities_per_round",
+      "path": "overall.stats.tradeKillOpportunitiesPerRound",
+      "number_format": "decimal"
+    },
+    "overall_stats_trade_kills_success_percentage": {
+      "label": "stats.trade_kills_success_percentage",
+      "path": "overall.stats.tradeKillsSuccessPercentage",
+      "number_format": "percent"
+    },
+    "overall_stats_utility_on_death_avg": {
+      "label": "stats.utility_on_death_avg",
+      "path": "overall.stats.utilityOnDeathAvg",
+      "number_format": "dollar"
     }
   },
   "static": {
-    "label": "static",
-    "props": {
-      "label": "text",
-      "value": "text",
+    "delimiter": {
+      "label": "delimiter",
+      "props": {
+        "char": "text"
+      }
+    },
+    "static": {
+      "label": "static",
+      "props": {
+        "label": "text",
+        "value": "text",
+        "color": [
+          "great",
+          "good",
+          "semi",
+          "average",
+          "subpar",
+          "poor",
+          "ct",
+          "t"
+        ]
+      }
+    }
+  },
+  "premier_season": {
+    "current_season_win": {
+      "label": "current_season_win",
+      "path": "premierSeasonWins",
+      "color": "great"
+    },
+    "current_season_tie": {
+      "label": "current_season_tie",
+      "path": "premierSeasonDraws",
+      "color": "subpar"
+    },
+    "current_season_loss": {
+      "label": "current_season_loss",
+      "path": "premierSeasonLosses",
+      "color": "poor"
+    },
+    "current_season_winrate": {
+      "label": "current_season_winrate",
+      "path": "premierSeasonWinRate",
+      "number_format": "percent",
       "color": [
-        "great",
-        "good",
-        "semi",
-        "average",
-        "subpar",
-        "poor",
-        "ct",
-        "t"
+        {
+          "value": 0,
+          "color": "average"
+        },
+        {
+          "value": 0.001,
+          "color": "poor"
+        },
+        {
+          "value": 0.47,
+          "color": "subpar"
+        },
+        {
+          "value": 0.49,
+          "color": "average"
+        },
+        {
+          "value": 0.51,
+          "color": "semi"
+        },
+        {
+          "value": 0.53,
+          "color": "good"
+        },
+        {
+          "value": 0.55,
+          "color": "great"
+        }
       ]
     }
   }

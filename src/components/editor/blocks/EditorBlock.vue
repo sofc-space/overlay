@@ -37,6 +37,7 @@ function addGroup() {
           <option value="thedark">{{ $t("editor.color.scheme.thedark") }}</option>
           <option value="semi">{{ $t("editor.color.scheme.semi") }}</option>
           <option value="transparent">{{ $t("editor.color.scheme.transparent") }}</option>
+          <option value="invisible">{{ $t("editor.color.scheme.invisible") }}</option>
         </select>
       </div>
       <div class="editor-block-actions-buttons">

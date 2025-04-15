@@ -2,7 +2,9 @@ import availableMetrics from '@/assets/metric/metrics_description.json';
 import {decodeBase64, encodeBase64} from "@/base64.js";
 
 export function updateMetric(container, index, target) {
-    let targetMetric = availableMetrics[target];
+    let metricArr = target.split(".");
+
+    let targetMetric = availableMetrics[metricArr[0]][metricArr[1]];
 
     let finalMetric = target;
     if(targetMetric.props) {
