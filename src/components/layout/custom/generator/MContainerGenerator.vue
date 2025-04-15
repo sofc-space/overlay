@@ -6,7 +6,7 @@ defineProps(["layoutJson", "apiResult"]);
 </script>
 
 <template>
-  <LayoutMContainer v-for="element in layoutJson" :scheme="element.scheme">
+  <LayoutMContainer v-for="element in layoutJson" :scheme="element.scheme" :scaling="element.scaling">
     <MetricsGenerator :layoutJson="element.content" :apiResult="apiResult" />
   </LayoutMContainer>
 </template>

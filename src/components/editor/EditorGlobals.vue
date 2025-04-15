@@ -24,7 +24,7 @@ defineProps(["globals"]);
         {{ $t("editor.globals.scaling_label") }}:
       </label>
       <select v-model="globals.scaling">
-        <option v-for="scale in Array.from({ length: 18 }, (value, index) => index < 9 ? ((index+1)/10) : index-8)" :value="(scale < 1 ? ('0' + scale*10) : scale)" :key="scale">{{ scale }}</option>>
+        <option v-for="scale in Array.from({ length: 27 }, (value, index) => index < 9 ? ((index+1)/10) : (index-8+1)/2)" :value="(scale < 1 ? ('0' + scale*10) : scale).toString().replace('.', '-')" :key="scale">{{ scale }}</option>>
       </select>
       <small>
         {{ $t("editor.globals.scaling_description") }}

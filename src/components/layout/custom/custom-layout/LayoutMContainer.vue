@@ -1,9 +1,11 @@
 <script setup>
-defineProps(["scheme"])
+import MContainer from "@/components/metric/MContainer.vue";
+
+defineProps(["scheme", "scaling"])
 </script>
 
 <template>
-  <div :class="'mcontainer custom-mcontainer custom-mcontainer-' + scheme">
+  <MContainer :class="'custom-mcontainer custom-mcontainer-' + scheme" :scaling="scaling">
     <slot></slot>
-  </div>
+  </MContainer>
 </template>

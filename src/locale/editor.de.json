@@ -10,7 +10,8 @@
     "scaling_description": "Skalierung deines Overlays",
     "language_label": "Sprache",
     "language_description": "Sprache deines Overlays",
-    "timerange_label": "Zeige die Zeitspanne deiner Daten"
+    "timerange_label": "Zeige die Zeitspanne deiner Daten",
+    "inherit": "erben"
   },
   "preview": {
     "url_label": "Link",

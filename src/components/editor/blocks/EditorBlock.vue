@@ -20,6 +20,13 @@ function addGroup() {
       <div class="editor-block-actions-label">
         Container
       </div>
+      <div class="editor-block-actions-scaling">
+        <label>{{ $t("editor.globals.scaling_label") }}: </label>
+        <select v-model="container.scaling">
+          <option value="null">{{ $t("editor.globals.inherit") }}</option>
+          <option v-for="scale in Array.from({ length: 27 }, (value, index) => index < 9 ? ((index+1)/10) : (index-8+1)/2)" :value="(scale < 1 ? ('0' + scale*10) : scale).toString().replace('.', '-')" :key="scale">{{ scale }}</option>>
+        </select>
+      </div>
       <div class="editor-block-actions-scheme">
         <label>{{ $t("editor.color.scheme.label") }}: </label>
         <select v-model="container.scheme">

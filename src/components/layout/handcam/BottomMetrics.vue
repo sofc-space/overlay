@@ -1,11 +1,12 @@
 <script setup>
 import Metric from "@/components/metric/Metric.vue";
 import PremierMetric from "@/components/metric/PremierMetric.vue";
+import MContainer from "@/components/metric/MContainer.vue";
 defineProps(["apiResult"])
 </script>
 
 <template>
-  <div class="bg-semi-transparent mcontainer">
+  <MContainer class="bg-semi-transparent">
     <div class="metric-group">
       <PremierMetric :value="apiResult.premierStart" :label="$t('labels.begin')" />
       <div class="metric-group-delimiter">→</div>
@@ -20,5 +21,5 @@ defineProps(["apiResult"])
       <div class="metric-group-delimiter">/</div>
       <Metric :label="$t('labels.loss')" :value="apiResult.losses" text="poor"></Metric>
     </div>
-  </div>
+  </MContainer>
 </template>
