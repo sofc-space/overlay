@@ -22,7 +22,7 @@ function onDrag(evt) {
   <div class="editor-block-group">
     <div class="editor-block-group-metrics">
       <EditorDropzone :container="group" index="0" :definition="definition" :neighbour="pointer + '-'" />
-      <EditorBlockContentItem v-for="(group_child, index) in group" :item="group_child" :index="index" :container="group" :definition="definition" :pointer="pointer + '-' + index" @deleteItem="() => group.splice(index, 1)" @changeMetric="target => updateMetric(group, index, target)" />
+      <EditorBlockContentItem v-for="(group_child, index) in group" :key="group_child" :item="group_child" :index="index" :container="group" :definition="definition" :pointer="pointer + '-' + index" @deleteItem="() => group.splice(index, 1)" @changeMetric="target => updateMetric(group, index, target)" />
     </div>
     <div class="editor-block-group-controls">
       <div class="editor-block-group-actions">
