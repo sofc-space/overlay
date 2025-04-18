@@ -1,0 +1,79 @@
+{
+  "editor": "Zum Editor",
+  "slogans": [
+    "Wozu carry’n, wenn’s keiner sieht?",
+    "Warum Statistiken sammeln, wenn du sie nicht teilst?",
+    "Deine Stats gehören nicht in den Schatten – ab ins Overlay!",
+    "Sammeln ist nice. Zeigen ist besser.",
+    "Zeig, was du drauf hast – direkt im Stream."
+  ],
+  "examples": {
+    "title": "Beispiele",
+    "caption": "Schau dir ein paar Beispiele an – und bau dir dein ganz persönliches Overlay im Editor!",
+    "button": "Editor",
+    "facecam": {
+      "title": "Facecam",
+      "description": "Steh über deine(n) Stats",
+      "text": "Du hast deine Facecam ausgekeyt und weißt nicht genau, wohin damit? Diese Vorlage hilft dir, deine Cam elegant ins Overlay zu integrieren – direkt über deinen Stats."
+    },
+    "handcam": {
+      "title": "Handcam",
+      "description": "Wichtige Infos geschickt verdecken",
+      "text": "Genug von Streamsnipern, die deine Minimap als Radar missbrauchen? Eine Handcam mit dieser Vorlage ist das perfekte Addon – schützt dich und sieht gut aus. Okay, ist auch Geschmackssache."
+    },
+    "topbar": {
+      "title": "Topbar",
+      "description": "Unauffällig, aber präsent",
+      "text": "Du willst das komplette Spielgeschehen zeigen, aber deine Stats nicht opfern? Diese Vorlage passt perfekt in die obere Ecke – sichtbar, aber nicht im Weg."
+    },
+    "sidebar": {
+      "title": "Sidebar",
+      "description": "Neutral & aufgeräumt",
+      "text": "Kickvotes nerven deine Zuschauer mehr als sie helfen? Dann nutze diese Vorlage als Sidebar – so sind nur noch deine wichtigsten Stats im Bild."
+    }
+  },
+  "how_and_why": {
+    "section1": {
+      "title": "Was ist sofc's Stats?",
+      "description": "sofc's Stats ist ein Tool, mit dem du deine Leetify-Statistiken direkt in dein Twitch-Overlay einbauen kannst. Zeig deinen Zuschauern live, wie du performst – egal ob K/D, HS-Rate oder über 50 weitere Kennzahlen.",
+      "featuresTitle": "Features",
+      "features": {
+        "realtime": "Echtzeit-Daten - aus deinem Leetify-Profil",
+        "stylish": "Stylisches Overlay - fügt sich nahtlos in deinen Stream ein",
+        "automated": "Voll automatisiert – einmal einrichten, zurücklehnen und glänzen"
+      },
+      "whyTitle": "Warum?",
+      "whyDescription": "Weil deine Stats nicht nur für dich da sind – deine Community feiert es, zu sehen, wie du dich entwickelst. Ob du gerade am hardgrinden bist oder dein persönliches Highlight hattest: sofc's Stats bringt’s auf den Stream."
+    },
+    "section2": {
+      "title": "Wie funktioniert sofc's Stats?",
+      "intro": "Der Einstieg ist super einfach – in wenigen Schritten bist du bereit:",
+      "steps": {
+        "steamId": {
+          "title": "Besorg dir deine Steam64-ID",
+          "description": "Die findest du z.B. <a href=\"https://steamid.io/\" target=\"_blank\">hier</a> oder direkt in deinem Steam-Profil-Link."
+        },
+        "leetifyAccount": {
+          "title": "Erstelle ein kostenloses Konto auf <a href=\"https://leetify.com/\" target=\"_blank\">Leetify</a>",
+          "description": "Keine Sorge, dauert nur wenige Minuten!"
+        },
+        "privacy": {
+          "title": "Stelle sicher, dass deine <a href=\"https://leetify.com/home/account#privacy\" target=\"_blank\">Leetify-Match-Historie</a> auf „öffentlich“ steht",
+          "description": "Das ist wichtig, damit sofc's Stats auf deine Daten zugreifen kann.<br><small>Wir speichern keine Zugangsdaten – deine Daten bleiben deins. Sicherheit & Datenschutz haben bei uns oberste Priorität.</small>"
+        },
+        "addSteamId": {
+          "title": "Füge deine Steam64-ID in den <router-link to=\"/editor\">Editor</router-link> ein",
+          "description": "Danach bekommst du einen personalisierten Link für dein Overlay."
+        },
+        "editOverlay": {
+          "title": "Bearbeite nun dein Overlay, wie du es benötigst",
+          "description": "Der Editor erstellt dir nun deinen persönlichen Link, welchen du später wieder in den Editor importieren kannst."
+        },
+        "addToOBS": {
+          "title": "Overlay in OBS oder Streamlabs einfügen",
+          "description": "Füge deinen persönlichen Link in OBS oder Streamlabs als Browserquelle ein. Deine Stats sind nun live."
+        }
+      }
+    }
+  }
+}

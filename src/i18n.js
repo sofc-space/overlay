@@ -10,6 +10,8 @@ import data_protection_de from "@/locale/data-protection.de.json";
 import data_protection_en from "@/locale/data-protection.en.json";
 import metrics_de from "@/locale/metrics.de.json";
 import metrics_en from "@/locale/metrics.en.json";
+import home_de from "@/locale/home.de.json";
+import home_en from "@/locale/home.en.json";
 
 //let locale = getParameterValue("lang", "")
 //if(!locale) {
@@ -27,9 +29,7 @@ const i18n = createI18n({
             pages: {
                 imprint: imprint_de,
                 data_protection: data_protection_de,
-                home: {
-                    editor: "Zum Editor"
-                }
+                home: home_de
             },
             labels: {
                 kills: "Kills",
@@ -53,6 +53,7 @@ const i18n = createI18n({
                     to: "bis",
                 },
                 links: {
+                    home: "Home",
                     copyright: "© 2025 sofc aka Hendrik Heinle",
                     editor: "Editor",
                     imprint: "Impressum",
@@ -73,9 +74,7 @@ const i18n = createI18n({
             pages: {
                 imprint: imprint_en,
                 data_protection: data_protection_en,
-                home: {
-                    editor: "Start Editor"
-                }
+                home: home_en
             },
             labels: {
                 kills: "kills",
@@ -99,6 +98,7 @@ const i18n = createI18n({
                     to: "to",
                 },
                 links: {
+                    home: "Home",
                     copyright: "© 2025 sofc aka Hendrik Heinle",
                     editor: "Editor",
                     imprint: "Imprint",

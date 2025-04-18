@@ -1,0 +1,79 @@
+{
+  "editor": "Start Editor",
+  "slogans": [
+    "What’s the point of carrying if no one sees it?",
+    "Why collect stats if you’re not gonna share them?",
+    "Your stats don’t belong in the dark – put them on stream?",
+    "Collecting is cool. Showing off is cooler.",
+    "Show what you’ve got – live and in your overlay."
+  ],
+  "examples": {
+    "title": "Examples",
+    "caption": "Check out a few examples – and build your very own custom overlay in the editor!",
+    "button": "Editor",
+    "facecam": {
+      "title": "Facecam",
+      "description": "Rise above your stats",
+      "text": "You’ve keyed out your facecam but don’t know where to put it now? This template helps you seamlessly integrate your cam into the overlay – right above your stats."
+    },
+    "handcam": {
+      "title": "Handcam",
+      "description": "Cover important info smartly",
+      "text": "Tired of stream snipers using your minimap as a radar? A handcam with this template is the perfect add-on – keeps you safe and looks cool. Well, taste may vary."
+    },
+    "topbar": {
+      "title": "Topbar",
+      "description": "Subtle but visible",
+      "text": "You want to show the full gameplay without losing your stats? This template fits perfectly in the top corner – visible, but never in the way."
+    },
+    "sidebar": {
+      "title": "Sidebar",
+      "description": "Neutral & clean",
+      "text": "Kick votes annoy your viewers more than they help? Use this sidebar template – now only your most important stats stay on screen."
+    }
+  },
+  "how_and_why": {
+    "section1": {
+      "title": "What is sofc's Stats?",
+      "description": "sofc's Stats is a tool that lets you integrate your Leetify stats directly into your Twitch overlay. Show your viewers live how you're performing – whether it's K/D, HS rate, or over 50 other metrics.",
+      "featuresTitle": "Features",
+      "features": {
+        "realtime": "Real-time data – from your Leetify profile",
+        "stylish": "Stylish overlay – seamlessly fits into your stream",
+        "automated": "Fully automated – set it up once, then sit back and shine"
+      },
+      "whyTitle": "Why?",
+      "whyDescription": "Because your stats aren't just for you – your community loves to see your progress. Whether you're grinding hard or just had a personal highlight: sofc's Stats brings it to your stream."
+    },
+    "section2": {
+      "title": "How does sofc's Stats work?",
+      "intro": "Getting started is super easy – you're ready in just a few steps:",
+      "steps": {
+        "steamId": {
+          "title": "Get your Steam64 ID",
+          "description": "You can find it <a href=\"https://steamid.io/\" target=\"_blank\">here</a> or directly in your Steam profile link."
+        },
+        "leetifyAccount": {
+          "title": "Create a free account on <a href=\"https://leetify.com/\" target=\"_blank\">Leetify</a>",
+          "description": "No worries, it only takes a few minutes!"
+        },
+        "privacy": {
+          "title": "Make sure your <a href=\"https://leetify.com/home/account#privacy\" target=\"_blank\">Leetify match history</a> is set to 'public'",
+          "description": "This is important so sofc's Stats can access your data.<br><small>We do not store any login credentials – your data remains yours. Security & privacy are our top priority.</small>"
+        },
+        "addSteamId": {
+          "title": "Enter your Steam64 ID into the <router-link to=\"/editor\">editor</router-link>",
+          "description": "You’ll then receive a personalized link for your overlay."
+        },
+        "editOverlay": {
+          "title": "Customize your overlay as needed",
+          "description": "The editor will generate your personal link, which you can later re-import into the editor."
+        },
+        "addToOBS": {
+          "title": "Add the overlay to OBS or Streamlabs",
+          "description": "Insert your personal link into OBS or Streamlabs as a browser source. Your stats are now live."
+        }
+      }
+    }
+  }
+}

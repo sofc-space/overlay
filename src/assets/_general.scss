@@ -1,5 +1,6 @@
 @use "colors";
 @use "fonts";
+@use "page";
 
 body, html {
   margin: 0 auto;
@@ -9,42 +10,8 @@ body, html {
   font-style: normal;
 }
 
-.page {
-  height: 100vh;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
 
-
-
-  .page-content{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    flex-grow: 1;
-    background-color: colors.$bg-solid-1;
-
-    > * {
-      flex: 1 0 auto;
-      height: 100%;
-    }
-
-    .page-simple {
-      padding: 2rem;
-      overflow-y: scroll;
-      flex-shrink: 1;
-
-      &.page-centered {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-      }
-    }
-  }
-}
-
+p,
 h1,
 h2,
 h3,

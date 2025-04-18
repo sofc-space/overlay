@@ -14,7 +14,7 @@ defineProps(["globals"]);
       </label>
       <input type="text" v-model="globals.steam64Id" />
       <small>
-        <a href="https://www.steamidfinder.com/" target="_blank">
+        <a href="https://steamid.io/" target="_blank">
           {{ $t("editor.globals.steam64Id_description") }}
         </a>
       </small>

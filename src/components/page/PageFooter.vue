@@ -9,6 +9,7 @@ import LanguageSelector from "@/components/i18n/LanguageSelector.vue";
       {{ $t("footer.links.copyright") }}
     </div>
     <div class="page-footer-navigation">
+      <router-link to="/">{{ $t("footer.links.home") }}</router-link>
       <router-link to="/editor">{{ $t("footer.links.editor") }}</router-link>
       <router-link to="/imprint">{{ $t("footer.links.imprint") }}</router-link>
       <router-link to="/data-protection">{{ $t("footer.links.data_protection") }}</router-link>

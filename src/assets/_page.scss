@@ -1,0 +1,206 @@
+@use "colors";
+
+.page {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+
+  .page-content{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: colors.$bg-solid-1;
+
+    > * {
+      flex: 1 0 auto;
+      height: 100%;
+    }
+
+    .page-simple {
+      padding: 2rem;
+      overflow-y: scroll;
+      flex-shrink: 1;
+
+      &.page-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+    }
+
+    .page-builder {
+      overflow-y: scroll;
+
+      > div {
+        padding: 2rem 0;
+      }
+
+      .examples-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem 0;
+
+        .examples {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2rem;
+          width: 100%;
+
+          .example {
+            width: calc(33% + 2rem);
+            border: .1rem solid colors.$border-1;
+            background-color: colors.$bg-solid-2;
+            display: flex;
+            flex-direction: row;
+
+            .example-content {
+              padding: 1rem 2rem;
+              flex-grow: 1;
+              flex-basis: 0;
+
+              h3 {
+                padding: 1rem 0;
+              }
+
+              small,
+              p {
+                padding: .25rem 0;
+              }
+
+              small {
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 1.125rem;
+              }
+            }
+
+            .example-image {
+              width: 45%;
+
+              .image-wrapper {
+                width: 100%;
+                height: 25rem;
+                overflow: hidden;
+                text-align: center;
+                border-right: .1rem solid colors.$border-1;
+                background-color: colors.$bg-solid-3;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+
+                  &:hover {
+                    object-fit: contain;
+                  }
+
+                  //position: absolute;
+                  //top: 0; left: 0; right: 0; bottom: 0;
+                  //max-width: 100%;
+                  //max-height: 100%;
+                  //margin: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .page-builder-content-containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+
+        .page-builder-content-containers-item {
+          border: .1rem solid colors.$border-1;
+          background-color: colors.$bg-solid-2;
+          padding: 0.5rem 1rem;
+          max-width: 33%;
+
+          .page-builder-content-containers-item-content {
+            padding: .5rem 0;
+
+            h2 {
+              padding: .5rem 0;
+            }
+
+            h3 {
+              padding: .5rem 0 0;
+            }
+
+            ul {
+              margin: 0;
+            }
+
+            dl {
+              padding: .5rem 0;
+
+              dd {
+                margin: 0;
+                padding: 0 2rem .5rem;
+                font-size: .9em;
+
+                small {
+                  font-size: .9em;
+                  font-style: italic;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .page-greeter {
+        padding: 14rem 0;
+        background-color: colors.$bg-solid-2;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        border-bottom: .1rem solid colors.$border-1;
+
+        h1 {
+          font-size: 4rem;
+          font-weight: lighter;
+        }
+      }
+
+      .slogan-cycle {
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        .slogan {
+          display: block;
+          opacity: 0;
+          transition: opacity 0.3s ease, top 0.3s ease;
+          position: absolute;
+          top: 100%;
+
+          &.active {
+            position: relative;
+            opacity: 1;
+            top: 0;
+          }
+
+          &.pre {
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

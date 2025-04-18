@@ -1,9 +1,9 @@
 <script setup>
 import {copy} from "@/clipboard.js";
-import {ref} from "vue";
+import {ref, watch} from "vue";
 import {encodeBase64} from "@/base64.js";
 
-const props = defineProps(["steam64Id", "scaling", "definition", "lang"])
+const props = defineProps(["steam64Id", "scaling", "definition", "lang", "globals"]);
 
 let url = "";
 function getUrl() {
@@ -18,12 +18,14 @@ function getDefinitionBase64() {
   return encodeBase64(JSON.stringify(props.definition))
 }
 
-const width = ref(5);
-const height = ref(3);
-const ratio = ref(height.value / width.value * 100)
+const ratio = ref(props.globals.ratioH / props.globals.ratioW * 100)
+
+watch(() => props.globals.ratioH, calcRatio);
+watch(() => props.globals.ratioW, calcRatio);
 
 function calcRatio() {
-  ratio.value = height.value / width.value * 100;
+  console.log("calcRatio");
+  ratio.value = props.globals.ratioH / props.globals.ratioW * 100;
 }
 </script>
 
@@ -41,9 +43,9 @@ function calcRatio() {
     </div>
     <div class="ratio-wrapper">
       <label>{{ $t('editor.preview.ratio_label') }}:</label><br>
-      <input type="number" v-model="width" @input="calcRatio" />
+      <input type="number" v-model="props.globals.ratioW" @input="calcRatio" />
       /
-      <input type="number" v-model="height" @input="calcRatio" />
+      <input type="number" v-model="props.globals.ratioH" @input="calcRatio" />
     </div>
   </div>
   <div class="preview-canvas">

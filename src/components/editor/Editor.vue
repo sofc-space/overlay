@@ -9,13 +9,13 @@ import EditorImport from "@/components/editor/EditorImport.vue";
 import {useRouter} from "vue-router";
 import getParameterValue, {findParameterValue} from "@/parameter.js";
 import {readDefinition, writeDefinition} from "@/definition.js";
-import LanguageSelector from "@/components/i18n/LanguageSelector.vue";
-import PageFooter from "@/components/page/PageFooter.vue";
 const { currentRoute, push } = useRouter();
 
 const steam64Id = ref("");
 const scaling = ref("");
 const lang = ref("");
+const ratioW = ref(5);
+const ratioH = ref(3);
 const definition = ref({});
 
 const globals = ref({
@@ -23,12 +23,16 @@ const globals = ref({
   scaling: scaling,
   lang: lang,
   definition: definition,
+  ratioW: ratioW,
+  ratioH: ratioH
 });
 
 steam64Id.value = getParameterValue("steam64Id", "76561199388500493");
 scaling.value = getParameterValue("scaling", "1");
 lang.value = getParameterValue("editor_lang", getParameterValue("lang", "en"));
 definition.value = readDefinition(getParameterValue("definition", writeDefinition(defaultDefinition)));
+ratioW.value = getParameterValue("ratio_w", 5);
+ratioH.value = getParameterValue("ratio_h", 3);
 
 watch(globals.value, (value) => {
   push({
@@ -38,6 +42,8 @@ watch(globals.value, (value) => {
       ["scaling"]: value.scaling,
       ["editor_lang"]: value.lang,
       ["definition"]: writeDefinition(value.definition),
+      ["ratio_w"]: ratioW.value,
+      ["ratio_h"]: ratioH.value,
     },
   });
 });
@@ -63,7 +69,7 @@ watch(globals.value, (value) => {
       <EditorGlobals :globals="globals"></EditorGlobals>
       <EditorBlocks :definition="definition" />
     </div>
-    <EditorPreview :steam64Id="steam64Id" :scaling="scaling" :lang="lang" :definition="definition" />
+    <EditorPreview :steam64Id="steam64Id" :scaling="scaling" :lang="lang" :definition="definition" :globals="globals" />
   </div>
 </template>
 
