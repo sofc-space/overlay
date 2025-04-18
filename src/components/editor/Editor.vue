@@ -7,7 +7,7 @@ import EditorBlocks from "@/components/editor/EditorBlocks.vue";
 import defaultDefinition from "@/assets/metric/default_definition.json";
 import EditorImport from "@/components/editor/EditorImport.vue";
 import {useRouter} from "vue-router";
-import getParameterValue, {findParameterValue} from "@/parameter.js";
+import getParameterValue from "@/parameter.js";
 import {readDefinition, writeDefinition} from "@/definition.js";
 const { currentRoute, push } = useRouter();
 

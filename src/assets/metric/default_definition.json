@@ -5,13 +5,25 @@
       "scaling": null,
       "content": [
         [
-          "session.kill",
-          "session.death"
+          {
+            "metric": "session.kill"
+          },
+          {
+            "metric": "session.death"
+          }
         ],
-        "session.kd",
-        "session.adr",
-        "session.hs_rate",
-        "session.winrate"
+        {
+          "metric": "session.kd"
+        },
+        {
+          "metric": "session.adr"
+        },
+        {
+          "metric": "session.hs_rate"
+        },
+        {
+          "metric": "session.winrate"
+        }
       ]
     },
     {
@@ -19,17 +31,23 @@
       "scaling": null,
       "content": [
         [
-          "session.premier_start",
+          {
+            "metric": "session.premier_start"
+          },
           {
             "metric": "static.delimiter",
             "props": {
               "char": "→"
             }
           },
-          "session.premier_current"
+          {
+            "metric": "session.premier_current"
+          }
         ],
         [
-          "premier_season.current_season_win",
+          {
+            "metric": "premier_season.current_season_win"
+          },
           {
             "metric": "static.delimiter",
             "props": {
@@ -45,23 +63,31 @@
             }
           }
         ],
-        "session.matches",
+        {
+          "metric": "session.matches"
+        },
         [
-          "session.win",
+          {
+            "metric": "session.win"
+          },
           {
             "metric": "static.delimiter",
             "props": {
               "char": "/"
             }
           },
-          "session.tie",
+          {
+            "metric": "session.tie"
+          },
           {
             "metric": "static.delimiter",
             "props": {
               "char": "/"
             }
           },
-          "session.loss"
+          {
+            "metric": "session.loss"
+          }
         ]
       ]
     }

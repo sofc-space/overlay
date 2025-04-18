@@ -50,7 +50,7 @@ for (const group of availableGroupsSorted) {
       <div class="editor-block-metric-actions-draganddrop" draggable="true" @dragstart="onDrag($event)">
         <i-material-symbols-drag-pan-rounded />
       </div>
-      <EditorMetricProps v-if="props.metric.props" :metric="props.metric" :metricDefinition="availableMetrics[metricKey.split('.')[0]][metricKey.split('.')[1]]" :group="metricKey.split('.')[0]" />
+      <EditorMetricProps :metric="props.metric" :metricDescription="availableMetrics[metricKey.split('.')[0]][metricKey.split('.')[1]]" :group="metricKey.split('.')[0]" />
       <button @click="() => $emit('deleteItem')" class="text-poor" :title="$t('editor.actions.delete_metric')">
         <i-material-symbols-delete-rounded />
       </button>

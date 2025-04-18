@@ -39,7 +39,7 @@ function convertValue(value) {
 function getColor() {
   let color = getProp(props.value, "color");
 
-  if(Array.isArray(props.description.color)) {
+  if(!color && Array.isArray(props.description.color)) {
     let color = props.description.color[0].color;
     const value = findValue();
     for(let c of props.description.color) {
@@ -58,8 +58,8 @@ function getLabelColor() {
 }
 
 function getLabel() {
-  let label = getProp(props.description, "label");
-  return t("metrics." + props.group + "." + label);
+  let label = getProp(props.value, "label");
+  return label ? label : t("metrics." + props.group + "." + getProp(props.description, "label"));
 }
 
 function getProp(obj, key) {

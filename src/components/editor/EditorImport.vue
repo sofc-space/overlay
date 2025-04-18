@@ -26,6 +26,7 @@ function runImport() {
       str = findParameterValue(str, "definition", "eyJjb250YWluZXJzIjpbXSwic2hvd1RpbWVSYW5nZSI6dHJ1ZX0=");
     }
     props.globals.definition = readDefinition(str);
+    console.log(props.globals.definition);
     document.getElementById('editor-import-dialog-' + uid).close();
   } catch (error) {
     importError.value = t("editor.actions.import.error_msg", {msg: error.message});

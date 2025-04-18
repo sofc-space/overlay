@@ -6,7 +6,7 @@ const props = defineProps(["definition"]);
 function addContainer() {
   props.definition.containers.push({
     scheme: "thedark",
-    scaling: "1",
+    scaling: null,
     content: [],
   });
 }

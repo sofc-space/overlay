@@ -54,7 +54,32 @@
     },
     "props": {
       "edit": "Edit parameters",
-      "edit_title": "Edit {title}"
+      "edit_title": "Edit {title}",
+      "colors": {
+        "great": "Great",
+        "good": "Good",
+        "semi": "Okayish",
+        "average": "Average",
+        "subpar": "Below average",
+        "poor": "Poor",
+        "ct": "Counter-Terrorists",
+        "t": "Terrorists"
+      },
+      "parameters": "Parameters",
+      "general": {
+        "title": "Generally",
+        "color": {
+          "label": "Metric color",
+          "default": "default"
+        },
+        "label_color": {
+          "label": "Label color",
+          "default": "default"
+        },
+        "label": {
+          "label": "Label"
+        }
+      }
     },
     "types": {
       "session": {
@@ -116,7 +141,7 @@
         "delimiter": {
           "label": "Delimiter",
           "props": {
-            "char": "-"
+            "char": "Delimiter"
           }
         },
         "static": {

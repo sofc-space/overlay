@@ -54,7 +54,32 @@
     },
     "props": {
       "edit": "Parameter bearbeiten",
-      "edit_title": "{title} bearbeiten"
+      "edit_title": "{title} bearbeiten",
+      "colors": {
+        "great": "Großartig",
+        "good": "Gut",
+        "semi": "Ganz okay",
+        "average": "Durchschnittlich",
+        "subpar": "Unterdurchschnittlich",
+        "poor": "Schlecht",
+        "ct": "Counter-Terrorists",
+        "t": "Terrorists"
+      },
+      "parameters": "Parameter",
+      "general": {
+        "title": "Allgemein",
+        "color": {
+          "label": "Farbe der Metrik",
+          "default": "standard"
+        },
+        "label_color": {
+          "label": "Farbe der Bezeichnung",
+          "default": "standard"
+        },
+        "label": {
+          "label": "Bezeichnung"
+        }
+      }
     },
     "types": {
       "session": {

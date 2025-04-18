@@ -7,7 +7,9 @@ const props = defineProps(["container", "definition", "index"])
 defineEmits(['removeContainer']);
 
 function addMetric() {
-  props.container.content.push("adr");
+  props.container.content.push({
+    metric: "session.adr"
+  });
 }
 
 function addGroup() {
@@ -54,7 +56,8 @@ function addGroup() {
     </div>
     <div class="editor-block">
       <EditorDropzone :container="container.content" index="0" :definition="definition" neighbour="" />
-      <EditorBlockContentItem v-for="(child, index) in container.content" :key="child" :item="child" :container="container.content" :index="index" :pointer="props.index + '-' + index" :definition="definition" @deleteItem="() => container.content.splice(index, 1)" @changeMetric="target => updateMetric(container.content, index, target)" />
+      <EditorBlockContentItem v-for="(child, index) in container.content" :key="child" :item="child" :container="container.content" :index="index" :pointer="props.index + '-' + index"
+                              :definition="definition" @deleteItem="() => container.content.splice(index, 1)" @changeMetric="target => updateMetric(container.content, index, target)" />
     </div>
   </div>
 </template>

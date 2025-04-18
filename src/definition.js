@@ -25,7 +25,29 @@ export function updateMetric(container, index, target) {
 
 export function readDefinition(str) {
     const json = decodeBase64(str);
-    return JSON.parse(json);
+    const definitionObject = JSON.parse(json);
+    for(const containers of definitionObject.containers) {
+        for(const metricOrGroupKey in containers.content) {
+            const isGroup = Array.isArray(containers.content[metricOrGroupKey]);
+            if(!isGroup) {
+                if(typeof containers.content[metricOrGroupKey] !== "object") {
+                    containers.content[metricOrGroupKey] = {
+                        metric: containers.content[metricOrGroupKey],
+                    };
+                }
+                continue;
+            }
+
+            for (const groupMetricKey in containers.content[metricOrGroupKey]) {
+                if(typeof containers.content[metricOrGroupKey][groupMetricKey] !== "object") {
+                    containers.content[metricOrGroupKey][groupMetricKey] = {
+                        metric: containers.content[metricOrGroupKey][groupMetricKey],
+                    };
+                }
+            }
+        }
+    }
+    return definitionObject;
 }
 
 export function writeDefinition(definition) {
